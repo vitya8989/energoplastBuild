@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Энергопласт</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/inputmask.css">
+	<link rel="stylesheet" href="css/sumoSelect.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="header__top_content">
+						<div class="header__top_left">
+							<a href="#" class="header__top_link">Блог</a>
+							<a href="#" class="header__top_link">Контакты</a>
+							<a href="#" class="header__top_link">Конференция</a>
+						</div>
+						<div class="header__top_right">
+							<a href="mailto:info@spbenergoplast.ru" class="header__top_email">
+								<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.2861 10.4466C13.286 11.2946 12.5981 11.9827 11.75 11.9827H1.53613C0.688157 11.9826 0.000150864 11.2945 0 10.4466V4.38407L5.54688 8.08231V8.08329L5.55469 8.08817C5.87836 8.29877 6.26406 8.40161 6.64355 8.40165C7.02301 8.40158 7.40878 8.29876 7.73242 8.08817L7.73926 8.08329L13.2861 4.38407V10.4466ZM11.75 1.01786C12.5982 1.01786 13.2861 1.70584 13.2861 2.55399V2.60575C13.2134 2.62679 13.1415 2.65626 13.0752 2.70047L6.90137 6.81669C6.84606 6.85189 6.75522 6.884 6.64355 6.88407C6.55871 6.88404 6.48508 6.86615 6.43066 6.84208L6.38281 6.81571L0.210938 2.70047C0.144505 2.65623 0.0728465 2.62677 0 2.60575V2.55399C0 1.7059 0.688064 1.01796 1.53613 1.01786H11.75Z" fill="currentColor"/>
+								</svg>
+								info@spbenergoplast.ru
+							</a>
+							<div class="header__top_time">
+								Мы на связи: Пн-Пт с 10:00 до 19:00
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__middle">
+				<div class="container">
+					<div class="header__middle_content">
+						<div class="header__middle_left">
+							<div class="header__logo">
+								<img src="./img/header/logo.svg" alt="">
+							</div>
+							<div class="header__catalog_search js_header_search this--desktop">
+								<a href="#" class="header__catalog_link">
+									<div class="header__catalog_link_icon">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_433_7668)">
+												<path d="M5.83301 10.834C7.67396 10.834 9.16602 12.326 9.16602 14.167C9.16584 16.0078 7.67385 17.5 5.83301 17.5C3.99232 17.4998 2.50018 16.0077 2.5 14.167C2.5 12.3262 3.99221 10.8342 5.83301 10.834ZM16.667 10.834C17.1271 10.8342 17.5 11.2069 17.5 11.667V15.834C17.4996 16.7539 16.7539 17.4996 15.834 17.5H12.5C11.5799 17.4998 10.8343 16.7541 10.834 15.834V11.667C10.834 11.2068 11.2068 10.834 11.667 10.834H16.667ZM8.33301 2.5C8.79314 2.5 9.16584 2.87292 9.16602 3.33301V7.5C9.16584 8.42022 8.42022 9.16584 7.5 9.16602H4.16602C3.24595 9.16566 2.50018 8.42011 2.5 7.5V3.33301C2.50018 2.87303 2.87303 2.50018 3.33301 2.5H8.33301ZM14.167 2.5C16.0077 2.50018 17.4998 3.99232 17.5 5.83301C17.5 7.67385 16.0078 9.16584 14.167 9.16602C12.326 9.16602 10.834 7.67396 10.834 5.83301C10.8342 3.99221 12.3262 2.5 14.167 2.5Z" fill="currentColor"/>
+											</g>
+											<defs>
+												<clipPath id="clip0_433_7668">
+													<rect width="20" height="20" fill="white"/>
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<div class="header__catalog_link_text">Каталог</div>
+								</a>
+								<form class="header__search_form">
+									<input type="text" placeholder="Поиск по сайту" name="search" class="header__search_form_input js_header_search_input">
+									<button class="header__search_form_submit">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_433_7683)">
+												<path d="M17.5 17.5L13.8807 13.8807M13.8807 13.8807C15.0871 12.6743 15.8333 11.0076 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333C11.0076 15.8333 12.6743 15.0871 13.8807 13.8807Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+											</g>
+											<defs>
+												<clipPath id="clip0_433_7683">
+													<rect width="20" height="20" fill="white"/>
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+									<div class="header__search_form_clear js_header_search_form_clear"></div>
+								</form>
+							</div>
+						</div>
+						<div class="header__middle_right">
+							<a href="tel:+78122145951" class="header__phone">
+								<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 4C0 1.79086 1.79086 0 4 0H24C26.2091 0 28 1.79086 28 4V24C28 26.2091 26.2091 28 24 28H4C1.79086 28 0 26.2091 0 24V4Z" fill="currentColor"/>
+									<path d="M11.899 16.0991C15.2577 19.4579 17.3791 18.7508 18.7933 17.3366C19.1838 16.9461 19.1838 16.3129 18.7933 15.9224L17.6332 14.7623C17.1999 14.329 16.4975 14.329 16.0643 14.7623C15.6708 15.1557 15.0979 15.3281 14.6133 15.0547C14.3287 14.8942 13.9977 14.6624 13.6667 14.3314C13.3358 14.0004 13.1039 13.6694 12.9434 13.3848C12.67 12.9002 12.8424 12.3273 13.2358 11.9339C13.6691 11.5006 13.6691 10.7982 13.2358 10.3649L12.0758 9.20485C11.6852 8.81433 11.0521 8.81433 10.6615 9.20485C9.24733 10.6191 8.54022 12.7404 11.899 16.0991Z" fill="white"/>
+								</svg>
+								+7 (812) 214 59-51
+							</a>
+							<button class="header__callback_btn btn this--primary">Заказать звонок</button>
+							<div class="header__burger js_burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<div class="header__bottom_content">
+						<div class="header__name">Производитель<br>
+							полимерных труб</div>
+						<nav class="header__nav nav js_nav">
+							<div class="nav__top">
+								<div class="header__catalog_search js_header_search this--mobile">
+									<a href="#" class="header__catalog_link">
+										<div class="header__catalog_link_icon">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_7668)">
+													<path d="M5.83301 10.834C7.67396 10.834 9.16602 12.326 9.16602 14.167C9.16584 16.0078 7.67385 17.5 5.83301 17.5C3.99232 17.4998 2.50018 16.0077 2.5 14.167C2.5 12.3262 3.99221 10.8342 5.83301 10.834ZM16.667 10.834C17.1271 10.8342 17.5 11.2069 17.5 11.667V15.834C17.4996 16.7539 16.7539 17.4996 15.834 17.5H12.5C11.5799 17.4998 10.8343 16.7541 10.834 15.834V11.667C10.834 11.2068 11.2068 10.834 11.667 10.834H16.667ZM8.33301 2.5C8.79314 2.5 9.16584 2.87292 9.16602 3.33301V7.5C9.16584 8.42022 8.42022 9.16584 7.5 9.16602H4.16602C3.24595 9.16566 2.50018 8.42011 2.5 7.5V3.33301C2.50018 2.87303 2.87303 2.50018 3.33301 2.5H8.33301ZM14.167 2.5C16.0077 2.50018 17.4998 3.99232 17.5 5.83301C17.5 7.67385 16.0078 9.16584 14.167 9.16602C12.326 9.16602 10.834 7.67396 10.834 5.83301C10.8342 3.99221 12.3262 2.5 14.167 2.5Z" fill="#ED1D25"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_433_7668">
+														<rect width="20" height="20" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+										<div class="header__catalog_link_text">Каталог</div>
+									</a>
+									<form class="header__search_form">
+										<input type="text" placeholder="Поиск по сайту" name="search" class="header__search_form_input js_header_search_input">
+										<button class="header__search_form_submit">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_7683)">
+													<path d="M17.5 17.5L13.8807 13.8807M13.8807 13.8807C15.0871 12.6743 15.8333 11.0076 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333C11.0076 15.8333 12.6743 15.0871 13.8807 13.8807Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_433_7683">
+														<rect width="20" height="20" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>
+										</button>
+										<div class="header__search_form_clear js_header_search_form_clear"></div>
+									</form>
+								</div>
+								<ul class="nav__menu">
+									<li class="nav__item">
+										<a href="#" class="nav__link">Продукция</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link this--dropdown js_nav_dropdown_link">
+											О компании
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_464_2520)">
+													<path d="M7 10L12 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_464_2520">
+														<rect width="24" height="24" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+										<div class="nav__dropdown">
+											<div class="nav__dropdown_body">
+												<a href="#" class="nav__dropdown_link this--mobile">О компании</a>
+												<a href="#" class="nav__dropdown_link">Испытания</a>
+												<a href="#" class="nav__dropdown_link">Вакансии</a>
+												<a href="#" class="nav__dropdown_link">Логистика</a>
+												<a href="#" class="nav__dropdown_link">СОУТ</a>
+												<a href="#" class="nav__dropdown_link">Новости</a>
+												<a href="#" class="nav__dropdown_link">СМИ о нас</a>
+											</div>
+										</div>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Производство</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Проектировщикам</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Кейсы</a>
+									</li>
+								</ul>
+								<ul class="nav__mobile_bottom_menu">
+									<li>
+										<a href="#" class="nav__mobile_bottom_menu_link">Блог</a>
+									</li>
+									<li>
+										<a href="#" class="nav__mobile_bottom_menu_link">Контакты</a>
+									</li>
+									<li>
+										<a href="#" class="nav__mobile_bottom_menu_link">Конференция</a>
+									</li>
+								</ul>
+							</div>
+							<div class="nav__bottom">
+								<a href="mailto:info@spbenergoplast.ru" class="nav__email">
+									<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.3516 12.8573C16.3514 13.901 15.5046 14.7468 14.4609 14.7469H1.88965C0.845991 14.7468 0.000150515 13.901 0 12.8573V5.39636L6.82715 9.9491L6.83594 9.95496C7.23428 10.214 7.7088 10.3407 8.17578 10.3407C8.64279 10.3406 9.1173 10.2141 9.51562 9.95496L9.52441 9.9491L16.3516 5.39636V12.8573ZM14.4609 1.25281C15.5046 1.25295 16.3513 2.09885 16.3516 3.14246V3.203C16.2617 3.2289 16.1747 3.26955 16.0928 3.3241L8.49707 8.38855C8.42931 8.43266 8.31523 8.47246 8.17578 8.47253C8.03647 8.47252 7.92236 8.43258 7.85449 8.38855L0.259766 3.3241C0.177787 3.26943 0.0899195 3.22894 0 3.203V3.14246C0.000216769 2.09885 0.846031 1.25296 1.88965 1.25281H14.4609Z" fill="currentColor"/>
+									</svg>
+									info@spbenergoplast.ru
+								</a>
+								<a href="tel:+78122145951" class="nav__tel">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.19848 10.7989C9.67682 15.2772 12.5052 14.3344 14.3909 12.4488C14.9116 11.9281 14.9116 11.0839 14.3909 10.5632L12.8441 9.01641C12.2664 8.43874 11.3299 8.43874 10.7522 9.01641C10.2276 9.54098 9.46373 9.7708 8.81757 9.40632C8.43814 9.19229 7.99682 8.88318 7.5555 8.44186C7.11418 8.00054 6.80507 7.55922 6.59104 7.17978C6.22655 6.53363 6.45638 5.76975 6.98095 5.24517C7.55861 4.66751 7.55862 3.73093 6.98095 3.15326L5.43418 1.60649C4.91348 1.08579 4.06926 1.08579 3.54856 1.60649C1.66294 3.49211 0.720135 6.32054 5.19848 10.7989Z" fill="currentColor"/>
+									</svg>
+									+7 (812) 214 59-51
+								</a>
+								<div class="nav__time">
+									Мы на связи: Пн-Пт с 10:00 до 19:00
+								</div>
+								<div class="nav__btns">
+									<a href="#" class="nav__lk_link btn this--border">Войти в личный кабинет</a>
+									<button class="nav__callback btn this--primary">Заказать звонок</button>
+								</div>
+							</div>
+						</nav>
+						<a href="#" class="header__lk_link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_436_7729)">
+									<path d="M13.333 10.834C15.6341 10.834 17.4998 12.6989 17.5 15C17.4998 16.3804 16.3805 17.4998 15 17.5H5C3.61954 17.4998 2.50017 16.3804 2.5 15C2.50018 12.6992 4.36524 10.8343 6.66602 10.834H13.333ZM10 2.49998C11.8408 2.49998 13.3328 3.99219 13.333 5.83298C13.333 7.67393 11.8409 9.16599 10 9.16599C8.15905 9.16599 6.66699 7.67393 6.66699 5.83298C6.66717 3.99219 8.15916 2.49998 10 2.49998Z" fill="currentColor"/>
+								</g>
+								<defs>
+									<clipPath id="clip0_436_7729">
+										<rect width="20" height="20" fill="white"/>
+									</clipPath>
+								</defs>
+							</svg>
+							Личный кабинет
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="catalog_page">
+			<section class="catalog_top">
+				<div class="container">
+					<div class="catalog_top__content">
+						<div class="catalog_top__breadcrumbs breadcrumbs">
+							<a href="#" class="breadcrumbs__link">Главная</a>
+							<a href="#" class="breadcrumbs__link">Продукция</a>
+							<a href="#" class="breadcrumbs__link active">Полимерные системы защиты кабельных линий</a>
+						</div>
+						<div class="catalog_top__group">
+							<h1 class="catalog_top__title h4_title">Полимерные системы защиты<br>
+								кабельных линий</h1>
+							<button class="catalog_top__filter_btn_mob js_mob_filter_open">
+								<img src="./img/icons/Funnel.svg" alt="">
+							</button>
+						</div>
+						<div class="catalog_top__symbols this--mobile">
+							<div class="catalog_top__symbol">
+								<div class="catalog_top__symbol_icon">
+									<img src="./img/icons/shield.svg" alt="">
+								</div>
+								<div class="catalog_top__symbol_text">Оболочка SAFE</div>
+							</div>
+							<div class="catalog_top__symbol">
+								<div class="catalog_top__symbol_icon">
+									<img src="./img/icons/no-fire.svg" alt="">
+								</div>
+								<div class="catalog_top__symbol_text">Негорючий слой</div>
+							</div>
+						</div>
+						<div class="catalog_top__row">
+							<div class="catalog_top__left js_mob_filter">
+								<form class="catalog_top__filter filter">
+									<div class="filter__top">
+										<h3 class="filter__title h4_title js_mob_filter_close">Фильтры</h3>
+									</div>
+									<div class="filter__block this--accordion">
+										<div class="filter__block_head js_filter_accordion_head active">
+											<div class="filter__block_title">По назначению</div>
+											<div class="filter__block_arrow">
+												<img src="./img/icons/arrow_down.svg" alt="">
+											</div>
+										</div>
+										<div class="filter__block_body">
+											<div class="filter__inputs this--radio">
+												<div class="filter__input">
+													<input type="radio" name="application" value="Защита кабеля" id="radio_1">
+													<label for="radio_1">Защита кабеля</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="application" value="Защита кабеля" id="radio_2">
+													<label for="radio_2">Защита кабеля</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="application" value="Защита кабеля" id="radio_3">
+													<label for="radio_3">Защита кабеля</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="application" value="Защита кабеля" id="radio_4">
+													<label for="radio_4">Защита кабеля</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter__block this--accordion">
+										<div class="filter__block_head js_filter_accordion_head">
+											<div class="filter__block_title">По диаметру</div>
+											<div class="filter__block_arrow">
+												<img src="./img/icons/arrow_down.svg" alt="">
+											</div>
+										</div>
+										<div class="filter__block_body">
+											<div class="filter__inputs this--radio">
+												<div class="filter__input">
+													<input type="radio" name="diameter" value="50" id="radio_5">
+													<label for="radio_5">50</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="diameter" value="63" id="radio_6">
+													<label for="radio_6">63</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="diameter" value="75" id="radio_7">
+													<label for="radio_7">75</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="diameter" value="90" id="radio_8">
+													<label for="radio_8">90</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="diameter" value="110" id="radio_9">
+													<label for="radio_9">110</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="diameter" value="115" id="radio_10">
+													<label for="radio_10">115</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="diameter" value="120" id="radio_11">
+													<label for="radio_11">120</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="diameter" value="125" id="radio_12">
+													<label for="radio_12">125</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter__block">
+										<div class="filter__block_head">
+											<div class="filter__block_title">Параметры</div>
+										</div>
+										<div class="filter__block_body">
+											<div class="filter__inputs this--tags">
+												<div class="filter__input">
+													<input type="radio" name="parameters" value="Аттестовано ПАО «Россети»" id="radio_13">
+													<label for="radio_13">Аттестовано ПАО «Россети»</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="parameters" value="C защитной оболочкой" id="radio_14">
+													<label for="radio_14">C защитной оболочкой</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="parameters" value="Для спец. сооружений" id="radio_15">
+													<label for="radio_15">Для спец. сооружений</label>
+												</div>
+												<div class="filter__input">
+													<input type="radio" name="parameters" value="ГОСТ Р МЭК 61386.24-2014" id="radio_16">
+													<label for="radio_16">ГОСТ Р МЭК 61386.24-2014</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter__bottom">
+										<button class="filter__submit btn this--primary js_mob_filter_close">Применить</button>
+										<button class="filter__reset">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_227_14230)">
+													<path d="M8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 6.11516 2.86911 4.4333 4.22844 3.33333" stroke="currentColor" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M2 3H4.66667V5.66667" stroke="currentColor" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_227_14230">
+														<rect width="16" height="16" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>
+											Сбросить фильтры
+										</button>
+									</div>
+								</form>
+								<div class="catalog_top__symbols this--desktop">
+									<div class="catalog_top__symbols_title">Условные обозначения</div>
+									<div class="catalog_top__symbol">
+										<div class="catalog_top__symbol_icon">
+											<img src="./img/icons/shield.svg" alt="">
+										</div>
+										<div class="catalog_top__symbol_text">Оболочка SAFE</div>
+									</div>
+									<div class="catalog_top__symbol">
+										<div class="catalog_top__symbol_icon">
+											<img src="./img/icons/no-fire.svg" alt="">
+										</div>
+										<div class="catalog_top__symbol_text">Негорючий слой</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog_top__body">
+								<div class="catalog_top__items">
+									<a href="#" class="catalog_top__item catalog_card">
+										<div class="catalog_card__img">
+											<img src="./img/catalog/card_product.png" alt="">
+										</div>
+										<div class="catalog_card__top">
+											<div class="catalog_card__row">
+												<div class="catalog_card__tag tag">
+													<div class="tag__icon">
+														<img src="./img/icons/star_dark.svg" alt="">
+													</div>
+													<div class="tag__text">Хит</div>
+												</div>
+												<div class="catalog_card__tag tag">
+													<div class="tag__text">2 слоя</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Оболочка SAFE</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+											<div class="catalog_card__title">Термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® ТС 2</div>
+										</div>
+										<div class="catalog_card__bottom">оттестовано ПАО «Россети»</div>
+									</a>
+									<a href="#" class="catalog_top__item catalog_card">
+										<div class="catalog_card__img">
+											<img src="./img/catalog/card_product.png" alt="">
+										</div>
+										<div class="catalog_card__top">
+											<div class="catalog_card__row">
+												<div class="catalog_card__tag tag">
+													<div class="tag__icon">
+														<img src="./img/icons/star_dark.svg" alt="">
+													</div>
+													<div class="tag__text">Хит</div>
+												</div>
+												<div class="catalog_card__tag tag">
+													<div class="tag__text">2 слоя</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+											<div class="catalog_card__title">ТЗК ЭНЕРГОПЛАСТ® ТС3-У</div>
+										</div>
+										<div class="catalog_card__bottom">Трубы для защиты кабеля</div>
+									</a>
+									<a href="#" class="catalog_top__item catalog_card">
+										<div class="catalog_card__img">
+											<img src="./img/catalog/card_product.png" alt="">
+										</div>
+										<div class="catalog_card__top">
+											<div class="catalog_card__row">
+												<div class="catalog_card__tag tag">
+													<div class="tag__icon">
+														<img src="./img/icons/star_dark.svg" alt="">
+													</div>
+													<div class="tag__text">Хит</div>
+												</div>
+												<div class="catalog_card__tag tag">
+													<div class="tag__text">2 слоя</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Оболочка SAFE</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+											<div class="catalog_card__title">Термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® БК (S)</div>
+										</div>
+										<div class="catalog_card__bottom">ГОСТ Р МЭК 61386.24-2014</div>
+									</a>
+									<a href="#" class="catalog_top__item catalog_card">
+										<div class="catalog_card__img">
+											<img src="./img/catalog/card_product.png" alt="">
+										</div>
+										<div class="catalog_card__top">
+											<div class="catalog_card__row">
+												<div class="catalog_card__tag tag">
+													<div class="tag__text">2 слоя</div>
+												</div>
+											</div>
+											<div class="catalog_card__title">ТЗК ЭНЕРГОПЛАСТ® ТС3-У</div>
+										</div>
+										<div class="catalog_card__bottom">Трубы для защиты кабеля</div>
+									</a>
+									<a href="#" class="catalog_top__item catalog_card">
+										<div class="catalog_card__img">
+											<img src="./img/catalog/card_product.png" alt="">
+										</div>
+										<div class="catalog_card__top">
+											<div class="catalog_card__row">
+												<div class="catalog_card__tag tag">
+													<div class="tag__text">2 слоя</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Оболочка SAFE</div>
+												</div>
+											</div>
+											<div class="catalog_card__title">Термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® БК (S) </div>
+										</div>
+										<div class="catalog_card__bottom">ГОСТ Р МЭК 61386.24-2014</div>
+									</a>
+									<a href="#" class="catalog_top__item catalog_card">
+										<div class="catalog_card__img">
+											<img src="./img/catalog/card_product.png" alt="">
+										</div>
+										<div class="catalog_card__top">
+											<div class="catalog_card__row">
+												<div class="catalog_card__tag tag">
+													<div class="tag__text">2 слоя</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+											<div class="catalog_card__title">Термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® ТС 2</div>
+										</div>
+										<div class="catalog_card__bottom">оттестовано ПАО «Россети»</div>
+									</a>
+									<a href="#" class="catalog_top__item catalog_card">
+										<div class="catalog_card__img">
+											<img src="./img/catalog/card_product.png" alt="">
+										</div>
+										<div class="catalog_card__top">
+											<div class="catalog_card__row">
+												<div class="catalog_card__tag tag">
+													<div class="tag__icon">
+														<img src="./img/icons/star_dark.svg" alt="">
+													</div>
+													<div class="tag__text">Хит</div>
+												</div>
+												<div class="catalog_card__tag tag">
+													<div class="tag__text">2 слоя</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+											<div class="catalog_card__title">Термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® ТС 2</div>
+										</div>
+										<div class="catalog_card__bottom">оттестовано ПАО «Россети»</div>
+									</a>
+									<a href="#" class="catalog_top__item catalog_card">
+										<div class="catalog_card__img">
+											<img src="./img/catalog/card_product.png" alt="">
+										</div>
+										<div class="catalog_card__top">
+											<div class="catalog_card__row">
+												<div class="catalog_card__tag tag">
+													<div class="tag__text">2 слоя</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+											<div class="catalog_card__title">Термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® ТС 2</div>
+										</div>
+										<div class="catalog_card__bottom">ГОСТ Р МЭК 61386.24-2014</div>
+									</a>
+									<a href="#" class="catalog_top__item catalog_card">
+										<div class="catalog_card__img">
+											<img src="./img/catalog/card_product.png" alt="">
+										</div>
+										<div class="catalog_card__top">
+											<div class="catalog_card__row">
+												<div class="catalog_card__tag tag">
+													<div class="tag__text">2 слоя</div>
+												</div>
+												<div class="catalog_card__tooltip">
+													<div class="catalog_card__tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="catalog_card__tooltip_text">Оболочка SAFE</div>
+												</div>
+											</div>
+											<div class="catalog_card__title">Термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® БК (S) </div>
+										</div>
+										<div class="catalog_card__bottom">ГОСТ Р МЭК 61386.24-2014</div>
+									</a>
+								</div>
+								<ul class="catalog_top__pagination pagination">
+<!--									<li class="pagination__item">-->
+<!--										<a href="#" class="pagination__link this&#45;&#45;arrow this&#45;&#45;prev">-->
+<!--											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--												<g clip-path="url(#clip0_227_14263)">-->
+<!--													<path d="M15.833 10L4.16634 10" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>-->
+<!--													<path d="M9.99967 15.8334L15.833 10L9.99968 4.16671" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>-->
+<!--												</g>-->
+<!--												<defs>-->
+<!--													<clipPath id="clip0_227_14263">-->
+<!--														<rect width="20" height="20" fill="white"/>-->
+<!--													</clipPath>-->
+<!--												</defs>-->
+<!--											</svg>-->
+<!--										</a>-->
+<!--									</li>-->
+									<li class="pagination__item">
+										<a href="#" class="pagination__link active">1</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__link">2</a>
+									</li>
+									<li class="pagination__item">
+										<div class="pagination__link this--dots">...</div>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__link">6</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__link">7</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__link this--arrow this--next">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_227_14263)">
+													<path d="M15.833 10L4.16634 10" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M9.99967 15.8334L15.833 10L9.99968 4.16671" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_227_14263">
+														<rect width="20" height="20" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog_about main_about">
+				<div class="container">
+					<div class="main_about__content">
+						<div class="main_about__block">
+							<h4 class="main_about__title h4_title title_icon">О продукции</h4>
+							<div class="main_about__right main_about__texts">
+								<div class="main_about__text this--bold">Трубный завод ЭНЕРГОПЛАСТ производит широкий ассортимент полимерных труб для систем защиты кабеля и волоконно-оптических линий связи Ø от 50 – 450 мм в соответствии с техническими условиями ТУ 22.21.21-002-16073610-2019</div>
+								<div class="main_about__text">Для всех труб применяется только специализированное первичное российское и импортное сырье с высокой стабильностью качества</div>
+							</div>
+						</div>
+						<div class="main_about__block">
+							<h4 class="main_about__title h4_title title_icon">Документы</h4>
+							<div class="main_about__right main_about__links">
+								<a href="#" download class="main_about__link document">
+									<div class="document__link_img">
+										<img src="./img/icons/pdf.svg" alt="">
+									</div>
+									<div class="document__link_right">
+										<div class="document__link_title">Презентация кабельных труб</div>
+										<div class="document__link_download_text">Скачать
+											(3,3 мб)</div>
+									</div>
+								</a>
+								<a href="#" download class="main_about__link document">
+									<div class="document__link_img">
+										<img src="./img/icons/pdf.svg" alt="">
+									</div>
+									<div class="document__link_right">
+										<div class="document__link_title">Каталог кабельных труб</div>
+										<div class="document__link_download_text">Скачать
+											(7,8 мб)</div>
+									</div>
+								</a>
+								<a href="#" download class="main_about__link document">
+									<div class="document__link_img">
+										<img src="./img/icons/pdf.svg" alt="">
+									</div>
+									<div class="document__link_right">
+										<div class="document__link_title">Презентация завода</div>
+										<div class="document__link_download_text">Скачать
+											(4,9 мб)</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog_calculate_form calculate_form">
+				<div class="container">
+					<div class="calculate_form__content">
+						<h2 class="calculate_form__title h2_title">Рассчитать стоимость заказа</h2>
+						<form name="calculate_form" class="calculate_form__form">
+							<div class="calculate_form__row">
+								<div class="calculate_form__input_wr">
+									<div class="calculate_form__input_title">Назначение</div>
+									<div class="calculate_form__input">
+										<select name="purpose" class="select">
+											<option value="Кабельная канализация" selected>Кабельная канализация</option>
+											<option value="Кабельная канализация 2">Кабельная канализация 2</option>
+											<option value="Кабельная канализация 3">Кабельная канализация 3</option>
+											<option value="Кабельная канализация 4">Кабельная канализация 4</option>
+										</select>
+									</div>
+								</div>
+								<div class="calculate_form__input_wr">
+									<div class="calculate_form__input_title">Диаметр, мм</div>
+									<div class="calculate_form__input">
+										<select name="diameter" class="select">
+											<option value="50" selected>50</option>
+											<option value="90">90</option>
+											<option value="110">110</option>
+											<option value="125">125</option>
+											<option value="140">140</option>
+											<option value="160">160</option>
+											<option value="180">180</option>
+											<option value="190">190</option>
+											<option value="200">200</option>
+										</select>
+									</div>
+								</div>
+								<div class="calculate_form__input_wr">
+									<div class="calculate_form__input_title">SDR</div>
+									<div class="calculate_form__input">
+										<select name="SDR" class="select">
+											<option value="SDR26" selected>SDR26</option>
+											<option value="SDR28">SDR28</option>
+											<option value="SDR30">SDR30</option>
+											<option value="SDR40">SDR40</option>
+										</select>
+									</div>
+								</div>
+								<div class="calculate_form__input_wr">
+									<div class="calculate_form__input_title">Количество, шт</div>
+									<div class="calculate_form__input">
+										<input type="number" name="count">
+									</div>
+								</div>
+							</div>
+							<button class="calculate_form__submit btn this--primary">Рассчитать стоимость</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="catalog_video">
+				<div class="container">
+					<div class="catalog_video__content">
+						<h2 class="catalog_video__title h2_title">Трубы для прокладки электрического<br>
+							кабеля завода ЭНЕРГОПЛАСТ</h2>
+						<div class="catalog_video__items">
+							<div class="catalog_video__item">
+								<h4 class="catalog_video__item_title h4_title title_icon">Типы труб кабельной защиты завода ЭНЕРГОПЛАСТ</h4>
+								<div class="catalog_video__item_text">Для всех труб применяется только специализированное первичное российское и импортное сырье с высокой стабильностью качества</div>
+								<div class="catalog_video__item_img">
+									<img src="./img/catalog/catalog_video/img.jpg" alt="">
+								</div>
+							</div>
+							<div class="catalog_video__item">
+								<h4 class="catalog_video__item_title h4_title title_icon">Полимерные системы защиты кабельных сетей</h4>
+								<div class="catalog_video__item_text">Для всех труб применяется только специализированное первичное российское и импортное сырье с высокой стабильностью качества</div>
+								<div class="catalog_video__item_video">
+									<iframe src="https://rutube.ru/play/embed/429ee5a708512d3c21eca387993579ec/" loading="lazy"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog_table">
+				<div class="container">
+					<div class="catalog_table__content">
+						<h2 class="catalog_table__title h2_title">Расчетная масса напорных труб</h2>
+						<table class="catalog_table__table table">
+							<colgroup>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+							<tr>
+								<th colspan="2" class="table-header">Требования к трубам термостойким защитным кабельным</th>
+								<th colspan="4" class="table-header">Соответствия труб ТЗК ЭНЕРГОПЛАСТ®</th>
+							</tr>
+							<tr>
+								<th>Наименование показателя</th>
+								<th>Норма</th>
+								<th>БКС</th>
+								<th>ТС</th>
+								<th>ТС2</th>
+								<th>ТС3</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Требование к герметичности соединений</td>
+								<td>IP68</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Предел текучести при растяжении, МПа не менее</td>
+								<td>21</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Относительное удлинение при разрыве, %, не менее</td>
+								<td>350</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Стойкость к действию химических средств</td>
+								<td>Хорошая стойкость к серной кислоте 40%</td>
+								<td></td>
+								<td></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Модуль упругости при растяжении, МПа, не менее</td>
+								<td>650</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Твердость по Шору D, не менее</td>
+								<td>66</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Испытание на стойкость к удару</td>
+								<td>Отсутствие трещин и других повреждений</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Изменение длины труб после прогрева, %, не более</td>
+								<td>3</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Теплопроводность, Вт/(м·К), не менее</td>
+								<td>0.5</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Стойкость к воздействию открытого пламени*</td>
+								<td>Категория FV-0 (ПВ-0)</td>
+								<td></td>
+								<td></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Испытание на стойкость к зажиганию нагретой проволокой при температуре (980±15)°С*</td>
+								<td>Отсутствие открытого пламени или горения и сечение образца не более 30 с после устранения источника зажигания</td>
+								<td></td>
+								<td></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Теплостойкость (75°С)*</td>
+								<td>Диаметр отпечатка шарика не должен превышать 2 мм</td>
+								<td></td>
+								<td></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Термостабильность при 200°С, мин, не менее</td>
+								<td>200</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Стойкость к УФ-излучению</td>
+								<td>Отсутствие трещин и иных повреждений</td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							<tr>
+								<td>Испытание по подтверждению климатического исполнения</td>
+								<td>Сохранение физико-механических параметров в заданных условиях окружающей среды</td>
+								<td></td>
+								<td><span></span></td>
+								<td><span></span></td>
+								<td><span></span></td>
+							</tr>
+							</tbody>
+						</table>
+						<div class="catalog_table__note">* только для внутреннего слоя труб ТЗК ЭНЕРГОПЛАСТ® ТС2 и ТЗК ЭНЕРГОПЛАСТ® ТС3 (по ГОСТ Р 53313) </div>
+						<a href="#" download class="catalog_table__download btn this--primary">Посмотреть таблицу</a>
+					</div>
+				</div>
+			</section>
+			<section class="catalog_documentation">
+				<div class="container">
+					<div class="catalog_documentation__content">
+						<h2 class="catalog_documentation__title h3_title">Нормативная документация</h2>
+						<div class="catalog_documentation__text">
+							<ul>
+								<li>СТО 34.01-21.1-001-2017 – Стандарт организации ПАО «Россети». Распределительные электрические сети напряжением 0,4-110 кВ. Требования к технологическому проектированию.</li>
+								<li>СТО 34.01-2.3.3-037-2020 - Стандарт организации ПАО «Россети». Трубы для прокладки кабельных линий напряжением выше 1 кВ. Методика входного контроля на объектах электросетевого строительства.</li>
+								<li>Положение ПАО «Россети» «О единой технической политике в электросетевом комплексе».</li>
+								<li>ГОСТ Р 53313 - Изделия погонажные электромонтажные. Требования пожарной безопасности. Методы испытаний.</li>
+								<li>Технические требования ПАО "Россети" к гладким термостойким полимерным трубам марки для прокладки силовых кабелей, подлежащих проверке при проведении аттестации в соответствии с нормативно-технической документацией.</li>
+							</ul>
+
+							<p>Многослойные кабельные трубы имеют монолитную гомогенную структуру, в которой слои соединяются на стадии формирования трубы путем молекулярного смешения под действием температур. Таким образом, расслоение труб в процессе производства, монтажа и эксплуатации полностью исключается.</p>
+							<p>Механическое или химическое повреждение проводки может спровоцировать массу проблем: от внезапной потери подключения ко всемирной сети, до коротких замыканий, способных вывести из строя всю технику. Поэтому вопрос защиты проводов от физических нагрузок, механических повреждений и воздействий окружающей среды становится во главе угла. И если с десяток лет назад трубы для защиты кабелей изготавливались из металла или бетона, что создавало определенные сложности при эксплуатации, транспортировке и повышало стоимость монтажа, томсегодня их делают из полиэтилена низкого давления.</p>
+							<p>Применение таких инновационных материалов позволило сократить расходы, связанные с укладкой, и избавиться от недостатков, присущих «ранним» аналогам. При этом стоит отметить, что с появлением гладких ПНД-труб для кабеля, сроки эксплуатации повысились в разы, а стоимость монтажа снизилась в несколько раз за счет:</p>
+
+							<ul>
+								<li>удобства и простоты монтажа с связи с гибкостью и небольшим весом;</li>
+								<li>возможностью применять менее дорогостоящую кабельную продукцию и производить замену кабеля с меньшими трудозатратами;</li>
+								<li>высокой надежностью соединений;</li>
+								<li>постоянной герметичностью в течение всего срока эксплуатации (от 50 лет);</li>
+								<li>устойчивость к любым нагрузкам (статическим и динамическим);</li>
+								<li>применения любых методов прокладки, включая бестраншейные;</li>
+							</ul>
+
+							<p>А благодаря высокой прочности, хорошей сопротивляемости агрессивным химическим средам, удивительной морозостойкости и способности выдерживать большие нагрузки, этот вариант защиты стал приоритетным</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog_faq faq">
+				<div class="container">
+					<div class="faq__content">
+						<div class="faq__accordions js_accordions">
+							<div class="faq__accordion accordion active js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">В каких случаях стоит использовать ПНД-трубы для защиты кабеля?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">
+										<p>Защитная труба для кабеля используется при прокладке силовых или волоконно-оптических линий связи:</p>
+										<ul>
+											<li>В земле;</li>
+											<li>Внутри капитальных, оштукатуренных стен;</li>
+											<li>В монолитных бетонных конструкциях.</li>
+										</ul>
+
+										<p>Учитывая, что труба имеет гладкие внутренние поверхности, прокладка кабеля происходит быстро, без необходимости в привлечении дополнительной техники или инструментов. При этом стоит отметить, что благодаря особенностям материала, вы сможете провести оперативный ремонт в местах повреждения проводки без необходимости в полном демонтаже защитной трубы</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Можно ли заказать продукцию по индивидуальным параметрам?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Мы специализируемся на производстве труб, соединительных элементов и комплектующих для систем водоснабжение, канализации, теплоснабжения и кабельной защиты. Весь ассортимент соответствует ГОСТ и ТУ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Работаете ли вы с регионами?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Мы специализируемся на производстве труб, соединительных элементов и комплектующих для систем водоснабжение, канализации, теплоснабжения и кабельной защиты. Весь ассортимент соответствует ГОСТ и ТУ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Как быстро осуществляется отгрузка?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Мы специализируемся на производстве труб, соединительных элементов и комплектующих для систем водоснабжение, канализации, теплоснабжения и кабельной защиты. Весь ассортимент соответствует ГОСТ и ТУ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Есть ли сертификаты на продукцию?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Мы специализируемся на производстве труб, соединительных элементов и комплектующих для систем водоснабжение, канализации, теплоснабжения и кабельной защиты. Весь ассортимент соответствует ГОСТ и ТУ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog_useful">
+				<div class="container">
+					<div class="catalog_useful__content">
+						<div class="catalog_useful__top">
+							<h2 class="catalog_useful__title h2_title">Полезная информация</h2>
+							<div class="catalog_useful__controls slider_controls">
+								<div class="catalog_useful__arrow_prev slider_arrow this--prev js_catalog_useful_slider_prev">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 17L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="catalog_useful__arrow_next slider_arrow this--next js_catalog_useful_slider_next">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 17L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="catalog_useful__slider swiper-container js_catalog_useful_slider">
+							<div class="catalog_useful__slider-wrapper swiper-wrapper">
+								<div class="catalog_useful__slider_slide swiper-slide">
+									<div class="catalog_useful__item">
+										<div class="catalog_useful__item_top">
+											<div class="catalog_useful__item_title">СТО 34.01-2.3.3-037-2020</div>
+											<a href="#" class="catalog_useful__item_link">
+												<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11 0.5C16.799 0.5 21.5 5.20101 21.5 11C21.5 16.799 16.799 21.5 11 21.5C5.20101 21.5 0.5 16.799 0.5 11C0.500001 5.20101 5.20101 0.500001 11 0.5Z" stroke="currentColor"/>
+													<g clip-path="url(#clip0_464_7788)">
+														<path d="M15.083 11L6.91634 11" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10.9997 6.9165L15.083 10.9998L10.9997 15.0832" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+													</g>
+													<defs>
+														<clipPath id="clip0_464_7788">
+															<rect width="14" height="14" fill="white" transform="matrix(1 1.74846e-07 1.74846e-07 -1 4 18)"/>
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+										<div class="catalog_useful__item_text">Трубы для прокладки кабельных линий напряжением выше 1 кВ</div>
+									</div>
+								</div>
+								<div class="catalog_useful__slider_slide swiper-slide">
+									<div class="catalog_useful__item">
+										<div class="catalog_useful__item_top">
+											<div class="catalog_useful__item_title">ГОСТ 18599-2001 с изм. 1,2</div>
+											<a href="#" class="catalog_useful__item_link">
+												<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11 0.5C16.799 0.5 21.5 5.20101 21.5 11C21.5 16.799 16.799 21.5 11 21.5C5.20101 21.5 0.5 16.799 0.5 11C0.500001 5.20101 5.20101 0.500001 11 0.5Z" stroke="currentColor"/>
+													<g clip-path="url(#clip0_464_7788)">
+														<path d="M15.083 11L6.91634 11" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10.9997 6.9165L15.083 10.9998L10.9997 15.0832" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+													</g>
+													<defs>
+														<clipPath id="clip0_464_7788">
+															<rect width="14" height="14" fill="white" transform="matrix(1 1.74846e-07 1.74846e-07 -1 4 18)"/>
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+										<div class="catalog_useful__item_text">Трубы напорные из полиэтилена. Технические условия (с Поправкой, с Изменениями N 1, 2)</div>
+									</div>
+								</div>
+								<div class="catalog_useful__slider_slide swiper-slide">
+									<div class="catalog_useful__item">
+										<div class="catalog_useful__item_top">
+											<div class="catalog_useful__item_title">ГОСТ Р 58121.2-2018</div>
+											<a href="#" class="catalog_useful__item_link">
+												<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11 0.5C16.799 0.5 21.5 5.20101 21.5 11C21.5 16.799 16.799 21.5 11 21.5C5.20101 21.5 0.5 16.799 0.5 11C0.500001 5.20101 5.20101 0.500001 11 0.5Z" stroke="currentColor"/>
+													<g clip-path="url(#clip0_464_7788)">
+														<path d="M15.083 11L6.91634 11" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10.9997 6.9165L15.083 10.9998L10.9997 15.0832" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+													</g>
+													<defs>
+														<clipPath id="clip0_464_7788">
+															<rect width="14" height="14" fill="white" transform="matrix(1 1.74846e-07 1.74846e-07 -1 4 18)"/>
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+										<div class="catalog_useful__item_text">Пластмассовые трубопроводы для транспортирования газообразного топлива. Полиэтилен (ПЭ) Ч. 2. Трубы</div>
+									</div>
+								</div>
+								<div class="catalog_useful__slider_slide swiper-slide">
+									<div class="catalog_useful__item">
+										<div class="catalog_useful__item_top">
+											<div class="catalog_useful__item_title">СТО 34.01-2.3.3-037-2020</div>
+											<a href="#" class="catalog_useful__item_link">
+												<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11 0.5C16.799 0.5 21.5 5.20101 21.5 11C21.5 16.799 16.799 21.5 11 21.5C5.20101 21.5 0.5 16.799 0.5 11C0.500001 5.20101 5.20101 0.500001 11 0.5Z" stroke="currentColor"/>
+													<g clip-path="url(#clip0_464_7788)">
+														<path d="M15.083 11L6.91634 11" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10.9997 6.9165L15.083 10.9998L10.9997 15.0832" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+													</g>
+													<defs>
+														<clipPath id="clip0_464_7788">
+															<rect width="14" height="14" fill="white" transform="matrix(1 1.74846e-07 1.74846e-07 -1 4 18)"/>
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+										<div class="catalog_useful__item_text">Трубы для прокладки кабельных линий напряжением выше 1 кВ</div>
+									</div>
+								</div>
+								<div class="catalog_useful__slider_slide swiper-slide">
+									<div class="catalog_useful__item">
+										<div class="catalog_useful__item_top">
+											<div class="catalog_useful__item_title">ГОСТ 18599-2001 с изм. 1,2</div>
+											<a href="#" class="catalog_useful__item_link">
+												<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11 0.5C16.799 0.5 21.5 5.20101 21.5 11C21.5 16.799 16.799 21.5 11 21.5C5.20101 21.5 0.5 16.799 0.5 11C0.500001 5.20101 5.20101 0.500001 11 0.5Z" stroke="currentColor"/>
+													<g clip-path="url(#clip0_464_7788)">
+														<path d="M15.083 11L6.91634 11" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10.9997 6.9165L15.083 10.9998L10.9997 15.0832" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+													</g>
+													<defs>
+														<clipPath id="clip0_464_7788">
+															<rect width="14" height="14" fill="white" transform="matrix(1 1.74846e-07 1.74846e-07 -1 4 18)"/>
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+										<div class="catalog_useful__item_text">Трубы напорные из полиэтилена. Технические условия (с Поправкой, с Изменениями N 1, 2)</div>
+									</div>
+								</div>
+								<div class="catalog_useful__slider_slide swiper-slide">
+									<div class="catalog_useful__item">
+										<div class="catalog_useful__item_top">
+											<div class="catalog_useful__item_title">ГОСТ Р 58121.2-2018</div>
+											<a href="#" class="catalog_useful__item_link">
+												<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11 0.5C16.799 0.5 21.5 5.20101 21.5 11C21.5 16.799 16.799 21.5 11 21.5C5.20101 21.5 0.5 16.799 0.5 11C0.500001 5.20101 5.20101 0.500001 11 0.5Z" stroke="currentColor"/>
+													<g clip-path="url(#clip0_464_7788)">
+														<path d="M15.083 11L6.91634 11" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10.9997 6.9165L15.083 10.9998L10.9997 15.0832" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+													</g>
+													<defs>
+														<clipPath id="clip0_464_7788">
+															<rect width="14" height="14" fill="white" transform="matrix(1 1.74846e-07 1.74846e-07 -1 4 18)"/>
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+										<div class="catalog_useful__item_text">Пластмассовые трубопроводы для транспортирования газообразного топлива. Полиэтилен (ПЭ) Ч. 2. Трубы</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog_useful__slider_pagination slider_pagination js_catalog_useful_slider_pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="footer__top_content">
+						<div class="footer__group">
+							<div class="footer__left">
+								<div class="footer__logo">
+									<img src="./img/footer/logo.svg" alt="">
+								</div>
+								<div class="footer__text">
+									Трубный завод Энергопласт предлагает купить трехслойные термостойкие трубы в Санкт-Петербурге от производителя
+								</div>
+								<button class="footer__form_btn btn this--primary">Написать нам</button>
+								<div class="footer__social">
+									<div class="footer__social_links">
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/tg.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/vk.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/dzen.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/rutube.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/youtube.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/instagram.svg" alt="">
+											<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M3.21988 8L3.36894 5.05967L0.785093 6.65394L0 5.35561L2.73292 4.00955L0 2.66348L0.785093 1.34606L3.36894 2.94033L3.21988 0H4.78012L4.64099 2.94033L7.22484 1.34606L8 2.66348L5.26708 4.00955L8 5.35561L7.22484 6.65394L4.64099 5.05967L4.78012 8H3.21988Z" fill="#ED1D25"/>
+											</svg>
+										</a>
+									</div>
+									<div class="footer__social_note">*Принадлежит Meta, признана экстремистской</div>
+								</div>
+							</div>
+							<div class="footer__nav_menu">
+								<div class="footer__nav_menu_title">Покупателям</div>
+								<ul class="footer__nav_menu_list">
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Производство</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Продукция</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Проектировщикам</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Кейсы</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Контакты</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Блог</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Конференция</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__nav_menu">
+								<div class="footer__nav_menu_title">О компании</div>
+								<ul class="footer__nav_menu_list">
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">О компании</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Испытания</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Вакансии</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Логистика</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">СОУТ</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Новости</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">СМИ о нас</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__right">
+							<div class="footer__right_title">Контакты</div>
+							<div class="footer__info">
+								<div class="footer__info_item">
+									<div class="footer__info_item_title">Позвоните нам</div>
+									<a href="tel:+78122145951" class="footer__info_item_link">+7 (812) 214 59-51</a>
+								</div>
+								<div class="footer__info_item">
+									<div class="footer__info_item_title">Напишите нам</div>
+									<a href="mainto:info@spbenergoplast.ru" class="footer__info_item_link">info@spbenergoplast.ru</a>
+								</div>
+								<div class="footer__info_item">
+									<div class="footer__info_item_title">Наш адрес</div>
+									<div class="footer__info_item_text">195030, г. Санкт-Петербург, улица<br> Химиков, дом 28, литер АC, офис 1106 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__bottom_content">
+						<div class="footer__bottom_left">
+							<div class="footer__copyright">
+								© 2012-2025 ООО «ЭНЕРГОПЛАСТ»
+							</div>
+						</div>
+						<div class="footer__bottom_right">
+							<a href="#" class="footer__bottom_link">Пользовательское соглашение</a>
+							<a href="#" class="footer__bottom_link">Политика конфиденциальности</a>
+							<div class="footer__develope">Разработка <span>MOS DIGITAL</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/sumoSelect.js"></script>
+	<script src="js/jquery.inputmask.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" type="text/javascript"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

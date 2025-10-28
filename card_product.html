@@ -1,0 +1,2364 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Энергопласт</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/inputmask.css">
+	<link rel="stylesheet" href="css/sumoSelect.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="header__top_content">
+						<div class="header__top_left">
+							<a href="#" class="header__top_link">Блог</a>
+							<a href="#" class="header__top_link">Контакты</a>
+							<a href="#" class="header__top_link">Конференция</a>
+						</div>
+						<div class="header__top_right">
+							<a href="mailto:info@spbenergoplast.ru" class="header__top_email">
+								<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.2861 10.4466C13.286 11.2946 12.5981 11.9827 11.75 11.9827H1.53613C0.688157 11.9826 0.000150864 11.2945 0 10.4466V4.38407L5.54688 8.08231V8.08329L5.55469 8.08817C5.87836 8.29877 6.26406 8.40161 6.64355 8.40165C7.02301 8.40158 7.40878 8.29876 7.73242 8.08817L7.73926 8.08329L13.2861 4.38407V10.4466ZM11.75 1.01786C12.5982 1.01786 13.2861 1.70584 13.2861 2.55399V2.60575C13.2134 2.62679 13.1415 2.65626 13.0752 2.70047L6.90137 6.81669C6.84606 6.85189 6.75522 6.884 6.64355 6.88407C6.55871 6.88404 6.48508 6.86615 6.43066 6.84208L6.38281 6.81571L0.210938 2.70047C0.144505 2.65623 0.0728465 2.62677 0 2.60575V2.55399C0 1.7059 0.688064 1.01796 1.53613 1.01786H11.75Z" fill="currentColor"/>
+								</svg>
+								info@spbenergoplast.ru
+							</a>
+							<div class="header__top_time">
+								Мы на связи: Пн-Пт с 10:00 до 19:00
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__middle">
+				<div class="container">
+					<div class="header__middle_content">
+						<div class="header__middle_left">
+							<div class="header__logo">
+								<img src="./img/header/logo.svg" alt="">
+							</div>
+							<div class="header__catalog_search js_header_search this--desktop">
+								<a href="#" class="header__catalog_link">
+									<div class="header__catalog_link_icon">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_433_7668)">
+												<path d="M5.83301 10.834C7.67396 10.834 9.16602 12.326 9.16602 14.167C9.16584 16.0078 7.67385 17.5 5.83301 17.5C3.99232 17.4998 2.50018 16.0077 2.5 14.167C2.5 12.3262 3.99221 10.8342 5.83301 10.834ZM16.667 10.834C17.1271 10.8342 17.5 11.2069 17.5 11.667V15.834C17.4996 16.7539 16.7539 17.4996 15.834 17.5H12.5C11.5799 17.4998 10.8343 16.7541 10.834 15.834V11.667C10.834 11.2068 11.2068 10.834 11.667 10.834H16.667ZM8.33301 2.5C8.79314 2.5 9.16584 2.87292 9.16602 3.33301V7.5C9.16584 8.42022 8.42022 9.16584 7.5 9.16602H4.16602C3.24595 9.16566 2.50018 8.42011 2.5 7.5V3.33301C2.50018 2.87303 2.87303 2.50018 3.33301 2.5H8.33301ZM14.167 2.5C16.0077 2.50018 17.4998 3.99232 17.5 5.83301C17.5 7.67385 16.0078 9.16584 14.167 9.16602C12.326 9.16602 10.834 7.67396 10.834 5.83301C10.8342 3.99221 12.3262 2.5 14.167 2.5Z" fill="currentColor"/>
+											</g>
+											<defs>
+												<clipPath id="clip0_433_7668">
+													<rect width="20" height="20" fill="white"/>
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<div class="header__catalog_link_text">Каталог</div>
+								</a>
+								<form class="header__search_form">
+									<input type="text" placeholder="Поиск по сайту" name="search" class="header__search_form_input js_header_search_input">
+									<button class="header__search_form_submit">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_433_7683)">
+												<path d="M17.5 17.5L13.8807 13.8807M13.8807 13.8807C15.0871 12.6743 15.8333 11.0076 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333C11.0076 15.8333 12.6743 15.0871 13.8807 13.8807Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+											</g>
+											<defs>
+												<clipPath id="clip0_433_7683">
+													<rect width="20" height="20" fill="white"/>
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+									<div class="header__search_form_clear js_header_search_form_clear"></div>
+								</form>
+							</div>
+						</div>
+						<div class="header__middle_right">
+							<a href="tel:+78122145951" class="header__phone">
+								<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 4C0 1.79086 1.79086 0 4 0H24C26.2091 0 28 1.79086 28 4V24C28 26.2091 26.2091 28 24 28H4C1.79086 28 0 26.2091 0 24V4Z" fill="currentColor"/>
+									<path d="M11.899 16.0991C15.2577 19.4579 17.3791 18.7508 18.7933 17.3366C19.1838 16.9461 19.1838 16.3129 18.7933 15.9224L17.6332 14.7623C17.1999 14.329 16.4975 14.329 16.0643 14.7623C15.6708 15.1557 15.0979 15.3281 14.6133 15.0547C14.3287 14.8942 13.9977 14.6624 13.6667 14.3314C13.3358 14.0004 13.1039 13.6694 12.9434 13.3848C12.67 12.9002 12.8424 12.3273 13.2358 11.9339C13.6691 11.5006 13.6691 10.7982 13.2358 10.3649L12.0758 9.20485C11.6852 8.81433 11.0521 8.81433 10.6615 9.20485C9.24733 10.6191 8.54022 12.7404 11.899 16.0991Z" fill="white"/>
+								</svg>
+								+7 (812) 214 59-51
+							</a>
+							<button class="header__callback_btn btn this--primary">Заказать звонок</button>
+							<div class="header__burger js_burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<div class="header__bottom_content">
+						<div class="header__name">Производитель<br>
+							полимерных труб</div>
+						<nav class="header__nav nav js_nav">
+							<div class="nav__top">
+								<div class="header__catalog_search js_header_search this--mobile">
+									<a href="#" class="header__catalog_link">
+										<div class="header__catalog_link_icon">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_7668)">
+													<path d="M5.83301 10.834C7.67396 10.834 9.16602 12.326 9.16602 14.167C9.16584 16.0078 7.67385 17.5 5.83301 17.5C3.99232 17.4998 2.50018 16.0077 2.5 14.167C2.5 12.3262 3.99221 10.8342 5.83301 10.834ZM16.667 10.834C17.1271 10.8342 17.5 11.2069 17.5 11.667V15.834C17.4996 16.7539 16.7539 17.4996 15.834 17.5H12.5C11.5799 17.4998 10.8343 16.7541 10.834 15.834V11.667C10.834 11.2068 11.2068 10.834 11.667 10.834H16.667ZM8.33301 2.5C8.79314 2.5 9.16584 2.87292 9.16602 3.33301V7.5C9.16584 8.42022 8.42022 9.16584 7.5 9.16602H4.16602C3.24595 9.16566 2.50018 8.42011 2.5 7.5V3.33301C2.50018 2.87303 2.87303 2.50018 3.33301 2.5H8.33301ZM14.167 2.5C16.0077 2.50018 17.4998 3.99232 17.5 5.83301C17.5 7.67385 16.0078 9.16584 14.167 9.16602C12.326 9.16602 10.834 7.67396 10.834 5.83301C10.8342 3.99221 12.3262 2.5 14.167 2.5Z" fill="#ED1D25"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_433_7668">
+														<rect width="20" height="20" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+										<div class="header__catalog_link_text">Каталог</div>
+									</a>
+									<form class="header__search_form">
+										<input type="text" placeholder="Поиск по сайту" name="search" class="header__search_form_input js_header_search_input">
+										<button class="header__search_form_submit">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_7683)">
+													<path d="M17.5 17.5L13.8807 13.8807M13.8807 13.8807C15.0871 12.6743 15.8333 11.0076 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333C11.0076 15.8333 12.6743 15.0871 13.8807 13.8807Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_433_7683">
+														<rect width="20" height="20" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>
+										</button>
+										<div class="header__search_form_clear js_header_search_form_clear"></div>
+									</form>
+								</div>
+								<ul class="nav__menu">
+									<li class="nav__item">
+										<a href="#" class="nav__link">Продукция</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link this--dropdown js_nav_dropdown_link">
+											О компании
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_464_2520)">
+													<path d="M7 10L12 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_464_2520">
+														<rect width="24" height="24" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+										<div class="nav__dropdown">
+											<div class="nav__dropdown_body">
+												<a href="#" class="nav__dropdown_link this--mobile">О компании</a>
+												<a href="#" class="nav__dropdown_link">Испытания</a>
+												<a href="#" class="nav__dropdown_link">Вакансии</a>
+												<a href="#" class="nav__dropdown_link">Логистика</a>
+												<a href="#" class="nav__dropdown_link">СОУТ</a>
+												<a href="#" class="nav__dropdown_link">Новости</a>
+												<a href="#" class="nav__dropdown_link">СМИ о нас</a>
+											</div>
+										</div>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Производство</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Проектировщикам</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Кейсы</a>
+									</li>
+								</ul>
+								<ul class="nav__mobile_bottom_menu">
+									<li>
+										<a href="#" class="nav__mobile_bottom_menu_link">Блог</a>
+									</li>
+									<li>
+										<a href="#" class="nav__mobile_bottom_menu_link">Контакты</a>
+									</li>
+									<li>
+										<a href="#" class="nav__mobile_bottom_menu_link">Конференция</a>
+									</li>
+								</ul>
+							</div>
+							<div class="nav__bottom">
+								<a href="mailto:info@spbenergoplast.ru" class="nav__email">
+									<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.3516 12.8573C16.3514 13.901 15.5046 14.7468 14.4609 14.7469H1.88965C0.845991 14.7468 0.000150515 13.901 0 12.8573V5.39636L6.82715 9.9491L6.83594 9.95496C7.23428 10.214 7.7088 10.3407 8.17578 10.3407C8.64279 10.3406 9.1173 10.2141 9.51562 9.95496L9.52441 9.9491L16.3516 5.39636V12.8573ZM14.4609 1.25281C15.5046 1.25295 16.3513 2.09885 16.3516 3.14246V3.203C16.2617 3.2289 16.1747 3.26955 16.0928 3.3241L8.49707 8.38855C8.42931 8.43266 8.31523 8.47246 8.17578 8.47253C8.03647 8.47252 7.92236 8.43258 7.85449 8.38855L0.259766 3.3241C0.177787 3.26943 0.0899195 3.22894 0 3.203V3.14246C0.000216769 2.09885 0.846031 1.25296 1.88965 1.25281H14.4609Z" fill="currentColor"/>
+									</svg>
+									info@spbenergoplast.ru
+								</a>
+								<a href="tel:+78122145951" class="nav__tel">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.19848 10.7989C9.67682 15.2772 12.5052 14.3344 14.3909 12.4488C14.9116 11.9281 14.9116 11.0839 14.3909 10.5632L12.8441 9.01641C12.2664 8.43874 11.3299 8.43874 10.7522 9.01641C10.2276 9.54098 9.46373 9.7708 8.81757 9.40632C8.43814 9.19229 7.99682 8.88318 7.5555 8.44186C7.11418 8.00054 6.80507 7.55922 6.59104 7.17978C6.22655 6.53363 6.45638 5.76975 6.98095 5.24517C7.55861 4.66751 7.55862 3.73093 6.98095 3.15326L5.43418 1.60649C4.91348 1.08579 4.06926 1.08579 3.54856 1.60649C1.66294 3.49211 0.720135 6.32054 5.19848 10.7989Z" fill="currentColor"/>
+									</svg>
+									+7 (812) 214 59-51
+								</a>
+								<div class="nav__time">
+									Мы на связи: Пн-Пт с 10:00 до 19:00
+								</div>
+								<div class="nav__btns">
+									<a href="#" class="nav__lk_link btn this--border">Войти в личный кабинет</a>
+									<button class="nav__callback btn this--primary">Заказать звонок</button>
+								</div>
+							</div>
+						</nav>
+						<a href="#" class="header__lk_link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_436_7729)">
+									<path d="M13.333 10.834C15.6341 10.834 17.4998 12.6989 17.5 15C17.4998 16.3804 16.3805 17.4998 15 17.5H5C3.61954 17.4998 2.50017 16.3804 2.5 15C2.50018 12.6992 4.36524 10.8343 6.66602 10.834H13.333ZM10 2.49998C11.8408 2.49998 13.3328 3.99219 13.333 5.83298C13.333 7.67393 11.8409 9.16599 10 9.16599C8.15905 9.16599 6.66699 7.67393 6.66699 5.83298C6.66717 3.99219 8.15916 2.49998 10 2.49998Z" fill="currentColor"/>
+								</g>
+								<defs>
+									<clipPath id="clip0_436_7729">
+										<rect width="20" height="20" fill="white"/>
+									</clipPath>
+								</defs>
+							</svg>
+							Личный кабинет
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="product_page">
+			<section class="product_top">
+				<div class="container">
+					<div class="product_top__content">
+						<div class="product_top__breadcrumbs breadcrumbs">
+							<a href="#" class="breadcrumbs__link">Продукция</a>
+							<a href="#" class="breadcrumbs__link">Трубы для защиты кабеля</a>
+							<a href="#" class="breadcrumbs__link active">Трехслойные термостойкие трубы с внутренним негорючим слоем ТЗК ЭНЕРГОПЛАСТ® ТС 3 (S) с защитной оболочкой SAFE ТУ</a>
+						</div>
+						<div class="product_top__row">
+							<div class="product_top__left">
+								<div class="product_top__slider_wr">
+									<div class="product_top__slider swiper-container js_product_top_slider">
+										<div class="product_top__slider_pagination slider_pagination js_product_top_slider_pagination"></div>
+										<div class="product_top__slider_wrapper swiper-wrapper">
+											<div class="product_top__slider_slide swiper-slide">
+												<div class="product_top__slider_img">
+													<img src="./img/product/img_1.png" alt="">
+												</div>
+											</div>
+											<div class="product_top__slider_slide swiper-slide">
+												<div class="product_top__slider_img">
+													<img src="./img/product/img_2.png" alt="">
+												</div>
+											</div>
+											<div class="product_top__slider_slide swiper-slide">
+												<div class="product_top__slider_img">
+													<img src="./img/product/img_3.png" alt="">
+												</div>
+											</div>
+											<div class="product_top__slider_slide swiper-slide">
+												<div class="product_top__slider_img">
+													<img src="./img/product/img_4.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product_top__slider_thumbs">
+										<div class="product_top__slider_thumb active js_product_top_slider_thumb" data-index="0">
+											<div class="product_top__slider_thumb_img">
+												<img src="./img/product/img_1.png" alt="">
+											</div>
+										</div>
+										<div class="product_top__slider_thumb js_product_top_slider_thumb" data-index="1">
+											<div class="product_top__slider_thumb_img">
+												<img src="./img/product/img_2.png" alt="">
+											</div>
+										</div>
+										<div class="product_top__slider_thumb js_product_top_slider_thumb" data-index="2">
+											<div class="product_top__slider_thumb_img">
+												<img src="./img/product/img_3.png" alt="">
+											</div>
+										</div>
+										<div class="product_top__slider_thumb js_product_top_slider_thumb" data-index="3">
+											<div class="product_top__slider_thumb_img">
+												<img src="./img/product/img_4.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product_top__right">
+								<div class="product_top__tags">
+									<div class="product_top__tag tag">
+										<div class="tag__icon">
+											<img src="./img/icons/star_dark.svg" alt="">
+										</div>
+										<div class="tag__text">Хит</div>
+									</div>
+									<div class="product_top__tag tag">
+										<div class="tag__icon">
+											<img src="./img/icons/fire_dark.svg" alt="">
+										</div>
+										<div class="tag__text">новинка</div>
+									</div>
+									<div class="product_top__tag tag">
+										<div class="tag__icon">
+											<img src="./img/icons/tag_dark.svg" alt="">
+										</div>
+										<div class="tag__text">Скидка</div>
+									</div>
+									<div class="product_top__tag tag">
+										<div class="tag__icon">
+											<img src="./img/icons/flashlight_dark.svg" alt="">
+										</div>
+										<div class="tag__text">Нет аналогов</div>
+									</div>
+								</div>
+								<h1 class="product_top__title h3_title">
+									Трехслойные термостойкие трубы с внутренним негорючим слоем ТЗК ЭНЕРГОПЛАСТ® ТС 3 (S) с защитной оболочкой SAFE ТУ
+								</h1>
+								<div class="product_top__standards">
+									<div class="product_top__standard">
+										<div class="product_top__standard_text">ТУ 22.21.21-002-16073610-2019</div>
+									</div>
+									<div class="product_top__standard tag this--dark">
+										<div class="tag__icon">
+											<img src="./img/icons/round_wh.svg" alt="">
+										</div>
+										<div class="tag__text">оттестовано ПАО «Россети» / до 500 кВт</div>
+									</div>
+								</div>
+								<div class="product_top__text">Предназначены для механической защиты кабельных линий классов номинального напряжения до 500 кВ от воздействия агрессивной окружающей среды при максимальных динамических нагрузках</div>
+								<div class="product_top__buy_block">
+									<div class="product_top__buy_block_top">
+										<div class="product_top__buy_block_price">от <span>999</span> ₽/м</div>
+										<div class="product_top__buy_block_tooltip js_tooltip">
+											<div class="product_top__buy_block_tooltip_icon js_tooltip_btn">
+												<img src="./img/icons/info.svg" alt="">
+											</div>
+											<div class="product_top__buy_block_tooltip_text js_tooltip_body">
+												<div class="product_top__buy_block_tooltip_close js_tooltip_close"></div>
+												Точная стоимость после<br>
+												согласования с менеджером
+											</div>
+										</div>
+									</div>
+									<div class="product_top__buy_block_btns">
+										<a href="#product_calculate_form" class="product_top__buy_block_btn this--no-mobile btn this--border">Рассчитать стоимость</a>
+										<button class="product_top__buy_block_btn btn this--primary">Оставить заявку</button>
+									</div>
+								</div>
+								<div class="product_top__info">
+									<div class="product_top__info_item">
+										<div class="product_top__info_item_title">Диаметр<br>
+											трубы</div>
+										<div class="product_top__info_item_value"><span>110 – 450</span> мм</div>
+									</div>
+									<div class="product_top__info_item">
+										<div class="product_top__info_item_title">Прямые<br>
+											отрезки</div>
+										<div class="product_top__info_item_value"><span>13,5</span> м</div>
+									</div>
+									<div class="product_top__info_item">
+										<div class="product_top__info_item_title">Температурный<br>
+											режим</div>
+										<div class="product_top__info_item_value"><span>95°С</span> раб.</div>
+									</div>
+								</div>
+								<div class="product_top__documents">
+									<a href="#" download class="product_top__document document">
+										<div class="document__link_img">
+											<img src="./img/icons/pdf.svg" alt="">
+										</div>
+										<div class="document__link_right">
+											<div class="document__link_title">Кабельные трубы</div>
+											<div class="document__link_download_text">Скачать
+												(3,3 мб)</div>
+										</div>
+									</a>
+									<a href="#" download class="product_top__document document">
+										<div class="document__link_img">
+											<img src="./img/icons/pdf.svg" alt="">
+										</div>
+										<div class="document__link_right">
+											<div class="document__link_title">Второй документ</div>
+											<div class="document__link_download_text">Скачать
+												(2,4 мб)</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product_about main_about">
+				<div class="container">
+					<div class="main_about__content">
+						<div class="main_about__block">
+							<h4 class="main_about__title h4_title title_icon">Важная информация</h4>
+							<div class="main_about__right main_about__texts">
+								<div class="main_about__text">Согласно заключению аттестационной комиссии ПАО «Россети» трубы ТЗК ЭНЕРГОПЛАСТ® ТС3 (S) рекомендуются для прокладки кабельных линий напряжением до 500 кВ</div>
+							</div>
+						</div>
+						<div class="main_about__block">
+							<h4 class="main_about__title h4_title title_icon">Описание</h4>
+							<div class="main_about__right main_about__texts">
+								<div class="main_about__text">
+									<ul>
+										<li>Негорючесть
+										<li>Высокая термостойкость на протяжении всего срока службы кабельной линии</li>
+										<li>Возможность извлечения, модернизации, ремонта или замены кабеля</li>
+										<li>Надежная защита кабеля от механических повреждений</li>
+										<li>Повышенная теплопроводность стенки</li>
+										<li>Возможности применения контактной сварки</li>
+										<li>Комплектация расширительными воронками из термостойкой полимерной композиции (tmax=130°С) для исключения перетирания оболочки кабеля</li>
+										<li>Комплектация термостойкими уплотнителями (tmax=130°С; IP68) для герметизации пространства между кабелем и трубой, включая случаи групповой прокладки кабелей в трубе</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="product_calculate_form" class="product_calculate_form calculate_form">
+				<div class="container">
+					<div class="calculate_form__content">
+						<h2 class="calculate_form__title h2_title">Рассчитать стоимость заказа</h2>
+						<form name="calculate_form" class="calculate_form__form">
+							<div class="calculate_form__row">
+								<div class="calculate_form__input_wr">
+									<div class="calculate_form__input_title">Назначение</div>
+									<div class="calculate_form__input">
+										<select name="purpose" class="select">
+											<option value="Кабельная канализация" selected>Кабельная канализация</option>
+											<option value="Кабельная канализация 2">Кабельная канализация 2</option>
+											<option value="Кабельная канализация 3">Кабельная канализация 3</option>
+											<option value="Кабельная канализация 4">Кабельная канализация 4</option>
+										</select>
+									</div>
+								</div>
+								<div class="calculate_form__input_wr">
+									<div class="calculate_form__input_title">Диаметр, мм</div>
+									<div class="calculate_form__input">
+										<select name="diameter" class="select">
+											<option value="50" selected>50</option>
+											<option value="90">90</option>
+											<option value="110">110</option>
+											<option value="125">125</option>
+											<option value="140">140</option>
+											<option value="160">160</option>
+											<option value="180">180</option>
+											<option value="190">190</option>
+											<option value="200">200</option>
+										</select>
+									</div>
+								</div>
+								<div class="calculate_form__input_wr">
+									<div class="calculate_form__input_title">SDR</div>
+									<div class="calculate_form__input">
+										<select name="SDR" class="select">
+											<option value="SDR26" selected>SDR26</option>
+											<option value="SDR28">SDR28</option>
+											<option value="SDR30">SDR30</option>
+											<option value="SDR40">SDR40</option>
+										</select>
+									</div>
+								</div>
+								<div class="calculate_form__input_wr">
+									<div class="calculate_form__input_title">Количество, шт</div>
+									<div class="calculate_form__input">
+										<input type="number" name="count">
+									</div>
+								</div>
+							</div>
+							<button class="calculate_form__submit btn this--primary">Рассчитать стоимость</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="product_faq faq">
+				<div class="container">
+					<div class="faq__content">
+						<div class="faq__accordions js_accordions">
+							<div class="faq__accordion accordion active js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Особенность</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Согласно заключению аттестационной комиссии ПАО «Россети» трубы ТЗК ЭНЕРГОПЛАСТ® ТС3 (S) рекомендуются для прокладки кабельных линий напряжением до 500 кВ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Конструкция</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Согласно заключению аттестационной комиссии ПАО «Россети» трубы ТЗК ЭНЕРГОПЛАСТ® ТС3 (S) рекомендуются для прокладки кабельных линий напряжением до 500 кВ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Ассортимент</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Согласно заключению аттестационной комиссии ПАО «Россети» трубы ТЗК ЭНЕРГОПЛАСТ® ТС3 (S) рекомендуются для прокладки кабельных линий напряжением до 500 кВ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Области применения</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Согласно заключению аттестационной комиссии ПАО «Россети» трубы ТЗК ЭНЕРГОПЛАСТ® ТС3 (S) рекомендуются для прокладки кабельных линий напряжением до 500 кВ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Рекомендации</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Согласно заключению аттестационной комиссии ПАО «Россети» трубы ТЗК ЭНЕРГОПЛАСТ® ТС3 (S) рекомендуются для прокладки кабельных линий напряжением до 500 кВ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Условия доставки</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Согласно заключению аттестационной комиссии ПАО «Россети» трубы ТЗК ЭНЕРГОПЛАСТ® ТС3 (S) рекомендуются для прокладки кабельных линий напряжением до 500 кВ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Условия оплаты</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Согласно заключению аттестационной комиссии ПАО «Россети» трубы ТЗК ЭНЕРГОПЛАСТ® ТС3 (S) рекомендуются для прокладки кабельных линий напряжением до 500 кВ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Характеристики в зависимости от кольцевой жесткости</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">
+										<div class="product_faq__table_wr">
+											<table class="product_faq__table this--variant_1 table">
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+												<tr>
+													<th>SN</th>
+													<th>12</th>
+													<th></th>
+													<th>16</th>
+													<th></th>
+													<th>24</th>
+													<th></th>
+													<th>32</th>
+													<th></th>
+													<th>48</th>
+													<th></th>
+													<th>64</th>
+													<th></th>
+													<th>96</th>
+													<th></th>
+													<th>128</th>
+													<th></th>
+												</tr>
+												<tr>
+													<th>Наружный диаметр труб D, мм</th>
+													<th>e, мм</th>
+													<th>Fmax, кН</th>
+													<th>e, мм</th>
+													<th>Fmax, кН</th>
+													<th>e, мм</th>
+													<th>Fmax, кН</th>
+													<th>e, мм</th>
+													<th>Fmax, кН</th>
+													<th>e, мм</th>
+													<th>Fmax, кН</th>
+													<th>e, мм</th>
+													<th>Fmax, кН</th>
+													<th>e, мм</th>
+													<th>Fmax, кН</th>
+													<th>e, мм</th>
+													<th>Fmax, кН</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<td>50</td>
+													<td>2.5</td>
+													<td>—</td>
+													<td>2.8</td>
+													<td>8.6</td>
+													<td>3.1</td>
+													<td>9.7</td>
+													<td>3.4</td>
+													<td>11</td>
+													<td>3.9</td>
+													<td>12</td>
+													<td>4.3</td>
+													<td>13</td>
+													<td>4.8</td>
+													<td>14</td>
+													<td>5.3</td>
+													<td>16</td>
+												</tr>
+												<tr>
+													<td>63</td>
+													<td>3.2</td>
+													<td>—</td>
+													<td>3.6</td>
+													<td>14</td>
+													<td>4</td>
+													<td>15</td>
+													<td>4.3</td>
+													<td>17</td>
+													<td>4.9</td>
+													<td>19</td>
+													<td>5.4</td>
+													<td>20</td>
+													<td>6.1</td>
+													<td>23</td>
+													<td>6.6</td>
+													<td>25</td>
+												</tr>
+												<tr>
+													<td>75</td>
+													<td>3.8</td>
+													<td>—</td>
+													<td>4.2</td>
+													<td>19</td>
+													<td>4.7</td>
+													<td>22</td>
+													<td>5.2</td>
+													<td>24</td>
+													<td>5.9</td>
+													<td>27</td>
+													<td>6.4</td>
+													<td>29</td>
+													<td>7.2</td>
+													<td>32</td>
+													<td>7.9</td>
+													<td>35</td>
+												</tr>
+												<tr>
+													<td>90</td>
+													<td>4.9</td>
+													<td>—</td>
+													<td>5</td>
+													<td>28</td>
+													<td>5.7</td>
+													<td>32</td>
+													<td>6.2</td>
+													<td>34</td>
+													<td>7</td>
+													<td>38</td>
+													<td>77</td>
+													<td>42</td>
+													<td>8.7</td>
+													<td>47</td>
+													<td>8.5</td>
+													<td>50</td>
+												</tr>
+												<tr>
+													<td>100</td>
+													<td>5.6</td>
+													<td>—</td>
+													<td>61</td>
+													<td>42</td>
+													<td>6.9</td>
+													<td>47</td>
+													<td>76</td>
+													<td>51</td>
+													<td>8.6</td>
+													<td>57</td>
+													<td>9.4</td>
+													<td>62</td>
+													<td>10.6</td>
+													<td>70</td>
+													<td>11.6</td>
+													<td>75</td>
+												</tr>
+												<tr>
+													<td>125</td>
+													<td>6.3</td>
+													<td>—</td>
+													<td>6.9</td>
+													<td>55</td>
+													<td>7.9</td>
+													<td>61</td>
+													<td>8.6</td>
+													<td>66</td>
+													<td>9.8</td>
+													<td>75</td>
+													<td>0.7</td>
+													<td>80</td>
+													<td>12</td>
+													<td>9.0</td>
+													<td>131</td>
+													<td>97</td>
+												</tr>
+												<tr>
+													<td>140</td>
+													<td>7.1</td>
+													<td>—</td>
+													<td>7.8</td>
+													<td>68</td>
+													<td>8.8</td>
+													<td>76</td>
+													<td>9.6</td>
+													<td>83</td>
+													<td>10.9</td>
+													<td>93</td>
+													<td>11.9</td>
+													<td>101</td>
+													<td>13.5</td>
+													<td>115</td>
+													<td>14.7</td>
+													<td>125</td>
+												</tr>
+												<tr>
+													<td>160</td>
+													<td>8.1</td>
+													<td>81</td>
+													<td>8.9</td>
+													<td>90</td>
+													<td>10.1</td>
+													<td>100</td>
+													<td>11</td>
+													<td>110</td>
+													<td>12.5</td>
+													<td>122</td>
+													<td>13.6</td>
+													<td>132</td>
+													<td>15.4</td>
+													<td>147</td>
+													<td>16.8</td>
+													<td>160</td>
+												</tr>
+												<tr>
+													<td>180</td>
+													<td>9.1</td>
+													<td>105</td>
+													<td>10</td>
+													<td>115</td>
+													<td>11.3</td>
+													<td>126</td>
+													<td>12.4</td>
+													<td>137</td>
+													<td>14</td>
+													<td>155</td>
+													<td>15.3</td>
+													<td>170</td>
+													<td>17.3</td>
+													<td>186</td>
+													<td>18.9</td>
+													<td>201</td>
+												</tr>
+												<tr>
+													<td>200</td>
+													<td>10.1</td>
+													<td>127</td>
+													<td>11.1</td>
+													<td>140</td>
+													<td>12.6</td>
+													<td>156</td>
+													<td>13.8</td>
+													<td>170</td>
+													<td>15.6</td>
+													<td>190</td>
+													<td>17</td>
+													<td>206</td>
+													<td>18.3</td>
+													<td>230</td>
+													<td>21</td>
+													<td>250</td>
+												</tr>
+												<tr>
+													<td>225</td>
+													<td>11.4</td>
+													<td>161</td>
+													<td>12.5</td>
+													<td>175</td>
+													<td>14.2</td>
+													<td>197</td>
+													<td>15.5</td>
+													<td>215</td>
+													<td>17.6</td>
+													<td>240</td>
+													<td>19.2</td>
+													<td>260</td>
+													<td>21.7</td>
+													<td>291</td>
+													<td>23.6</td>
+													<td>315</td>
+												</tr>
+												<tr>
+													<td>250</td>
+													<td>12.7</td>
+													<td>200</td>
+													<td>13.9</td>
+													<td>216</td>
+													<td>15.7</td>
+													<td>245</td>
+													<td>17.2</td>
+													<td>265</td>
+													<td>18.5</td>
+													<td>300</td>
+													<td>21.3</td>
+													<td>321</td>
+													<td>24.1</td>
+													<td>360</td>
+													<td>26.3</td>
+													<td>390</td>
+												</tr>
+												<tr>
+													<td>280</td>
+													<td>14.2</td>
+													<td>250</td>
+													<td>15.5</td>
+													<td>271</td>
+													<td>17.6</td>
+													<td>305</td>
+													<td>18.3</td>
+													<td>332</td>
+													<td>21.8</td>
+													<td>372</td>
+													<td>23.9</td>
+													<td>403</td>
+													<td>27</td>
+													<td>450</td>
+													<td>29.4</td>
+													<td>486</td>
+												</tr>
+												<tr>
+													<td>315</td>
+													<td>15.8</td>
+													<td>315</td>
+													<td>17.5</td>
+													<td>345</td>
+													<td>19.8</td>
+													<td>86</td>
+													<td>21.7</td>
+													<td>420</td>
+													<td>24.8</td>
+													<td>471</td>
+													<td>26.8</td>
+													<td>510</td>
+													<td>30.4</td>
+													<td>570</td>
+													<td>33.1</td>
+													<td>615</td>
+												</tr>
+												<tr>
+													<td>355</td>
+													<td>17.8</td>
+													<td>400</td>
+													<td>18.7</td>
+													<td>435</td>
+													<td>22.3</td>
+													<td>490</td>
+													<td>24.4</td>
+													<td>535</td>
+													<td>27.7</td>
+													<td>600</td>
+													<td>30.3</td>
+													<td>850</td>
+													<td>34.2</td>
+													<td>725</td>
+													<td>37.3</td>
+													<td>762</td>
+												</tr>
+												<tr>
+													<td>400</td>
+													<td>20.2</td>
+													<td>500</td>
+													<td>22.2</td>
+													<td>553</td>
+													<td>25.2</td>
+													<td>625</td>
+													<td>27.5</td>
+													<td>677</td>
+													<td>31.2</td>
+													<td>760</td>
+													<td>34.1</td>
+													<td>823</td>
+													<td>38.5</td>
+													<td>920</td>
+													<td>42</td>
+													<td>992</td>
+												</tr>
+												<tr>
+													<td>450</td>
+													<td>22.5</td>
+													<td>642</td>
+													<td>24.9</td>
+													<td>700</td>
+													<td>28.3</td>
+													<td>790</td>
+													<td>31</td>
+													<td>856</td>
+													<td>35.1</td>
+													<td>961</td>
+													<td>38.3</td>
+													<td>1041</td>
+													<td>43.4</td>
+													<td>1163</td>
+													<td>47.3</td>
+													<td>1260</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+										<a href="#" download class="product_faq__table_download btn this--primary">Посмотреть таблицу</a>
+									</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Характеристики в зависимости от кольцевой жесткости</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">
+										<div class="product_faq__table_wr">
+											<table class="product_faq__table this--variant_2 table">
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+												<tr>
+													<th rowspan="5" style="font-weight: 500; font-size: 16px;">Номинальный наружный диаметр труб Dн, мм</th>
+													<th colspan="14" style="font-weight: 500; font-size: 16px;">Стандартное размерное отношение</th>
+												</tr>
+												<tr>
+													<th colspan="2">SDR 33</th>
+													<th colspan="2">SDR 26</th>
+													<th colspan="2">SDR 21</th>
+													<th colspan="2">SDR 17</th>
+													<th colspan="2">SDR 13.6</th>
+													<th colspan="2">SDR 11</th>
+													<th colspan="2">SDR 9</th>
+												</tr>
+												<tr>
+													<th colspan="14" style="font-weight: 500; font-size: 16px;">Номинальное давление дnя класса материапа, бар ПЭ100-RС и ПЭ100</th>
+												</tr>
+												<tr>
+													<th colspan="2">PN 5</th>
+													<th colspan="2">PN 6</th>
+													<th colspan="2">PN 8</th>
+													<th colspan="2">PN10</th>
+													<th colspan="2">PN 12,5</th>
+													<th colspan="2">PN16</th>
+													<th colspan="2">PN 20</th>
+												</tr>
+												<tr>
+													<th>e, мм</th>
+													<th>м.п.м, кг</th>
+													<th>e, мм</th>
+													<th>м.п.м, кг</th>
+													<th>e, мм</th>
+													<th>м.п.м, кг</th>
+													<th>e, мм</th>
+													<th>м.п.м, кг</th>
+													<th>e, мм</th>
+													<th>м.п.м, кг</th>
+													<th>e, мм</th>
+													<th>м.п.м, кг</th>
+													<th>e, мм</th>
+													<th>м.п.м, кг</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<td>50</td>
+													<td>—</td>
+													<td>—</td>
+													<td>2.0</td>
+													<td>0.31</td>
+													<td>2.4</td>
+													<td>0.37</td>
+													<td>3.0</td>
+													<td>0.45</td>
+													<td>3.7</td>
+													<td>0.55</td>
+													<td>4.6</td>
+													<td>0.67</td>
+													<td>5.6</td>
+													<td>0.79</td>
+												</tr>
+												<tr>
+													<td>63</td>
+													<td>—</td>
+													<td>—</td>
+													<td>2.5</td>
+													<td>0.49</td>
+													<td>3.0</td>
+													<td>0.58</td>
+													<td>3.8</td>
+													<td>0.72</td>
+													<td>4.7</td>
+													<td>0.88</td>
+													<td>5.8</td>
+													<td>1.06</td>
+													<td>7.1</td>
+													<td>1.26</td>
+												</tr>
+												<tr>
+													<td>75</td>
+													<td>—</td>
+													<td>—</td>
+													<td>2.9</td>
+													<td>0.68</td>
+													<td>3.6</td>
+													<td>0.83</td>
+													<td>4.5</td>
+													<td>1.02</td>
+													<td>5.6</td>
+													<td>1.24</td>
+													<td>6.8</td>
+													<td>1.48</td>
+													<td>8.4</td>
+													<td>1.78</td>
+												</tr>
+												<tr>
+													<td>90</td>
+													<td>—</td>
+													<td>—</td>
+													<td>3.5</td>
+													<td>0.98</td>
+													<td>4.3</td>
+													<td>1.19</td>
+													<td>5.4</td>
+													<td>1.47</td>
+													<td>6.7</td>
+													<td>1.78</td>
+													<td>8.2</td>
+													<td>2.14</td>
+													<td>1.01</td>
+													<td>2.57</td>
+												</tr>
+												<tr>
+													<td>110</td>
+													<td>—</td>
+													<td>—</td>
+													<td>4.2</td>
+													<td>1.43</td>
+													<td>5.3</td>
+													<td>1.79</td>
+													<td>6.6</td>
+													<td>2.18</td>
+													<td>8.1</td>
+													<td>2.64</td>
+													<td>10.0</td>
+													<td>3.17</td>
+													<td>12.3</td>
+													<td>3.82</td>
+												</tr>
+												<tr>
+													<td>125</td>
+													<td>—</td>
+													<td>—</td>
+													<td>4.8</td>
+													<td>1.85</td>
+													<td>6.0</td>
+													<td>2.28</td>
+													<td>7.4</td>
+													<td>2.78</td>
+													<td>9.2</td>
+													<td>3.41</td>
+													<td>11.4</td>
+													<td>4.12</td>
+													<td>14.0</td>
+													<td>4.92</td>
+												</tr>
+												<tr>
+													<td>140</td>
+													<td>—</td>
+													<td>—</td>
+													<td>5.4</td>
+													<td>2.33</td>
+													<td>6.7</td>
+													<td>2.86</td>
+													<td>8.3</td>
+													<td>3.50</td>
+													<td>10.3</td>
+													<td>4.26</td>
+													<td>12.7</td>
+													<td>5.13</td>
+													<td>15.7</td>
+													<td>6.18</td>
+												</tr>
+												<tr>
+													<td>160</td>
+													<td>—</td>
+													<td>—</td>
+													<td>6.2</td>
+													<td>3.06</td>
+													<td>7.7</td>
+													<td>3.75</td>
+													<td>9.5</td>
+													<td>4.56</td>
+													<td>11.8</td>
+													<td>5.56</td>
+													<td>14.6</td>
+													<td>6.74</td>
+													<td>17.9</td>
+													<td>8.05</td>
+												</tr>
+												<tr>
+													<td>180</td>
+													<td>—</td>
+													<td>—</td>
+													<td>6.9</td>
+													<td>3.82</td>
+													<td>8.6</td>
+													<td>4.71</td>
+													<td>10.7</td>
+													<td>5.77</td>
+													<td>13.3</td>
+													<td>7.05</td>
+													<td>16.4</td>
+													<td>8.52</td>
+													<td>20.1</td>
+													<td>10.21</td>
+												</tr>
+												<tr>
+													<td>200</td>
+													<td>—</td>
+													<td>—</td>
+													<td>7.7</td>
+													<td>4.73</td>
+													<td>9.6</td>
+													<td>5.83</td>
+													<td>11.9</td>
+													<td>7.11</td>
+													<td>14.7</td>
+													<td>8.65</td>
+													<td>18.2</td>
+													<td>10.51</td>
+													<td>22.4</td>
+													<td>12.63</td>
+												</tr>
+												<tr>
+													<td>225</td>
+													<td>—</td>
+													<td>—</td>
+													<td>8.6</td>
+													<td>5.94</td>
+													<td>10.8</td>
+													<td>7.37</td>
+													<td>13.4</td>
+													<td>9.03</td>
+													<td>16.6</td>
+													<td>11.01</td>
+													<td>20.5</td>
+													<td>13.34</td>
+													<td>25.2</td>
+													<td>15.97</td>
+												</tr>
+												<tr>
+													<td>250</td>
+													<td>—</td>
+													<td>—</td>
+													<td>9.6</td>
+													<td>7.37</td>
+													<td>11.9</td>
+													<td>9.01</td>
+													<td>14.8</td>
+													<td>11.12</td>
+													<td>18.4</td>
+													<td>13.54</td>
+													<td>22.7</td>
+													<td>16.37</td>
+													<td>27.9</td>
+													<td>19.60</td>
+												</tr>
+												<tr>
+													<td>280</td>
+													<td>—</td>
+													<td>—</td>
+													<td>10.7</td>
+													<td>9.19</td>
+													<td>13.4</td>
+													<td>11.42</td>
+													<td>16.6</td>
+													<td>13.95</td>
+													<td>20.6</td>
+													<td>16.98</td>
+													<td>25.4</td>
+													<td>20.51</td>
+													<td>31.3</td>
+													<td>24.66</td>
+												</tr>
+												<tr>
+													<td>315</td>
+													<td>9.7</td>
+													<td>9.45</td>
+													<td>12.1</td>
+													<td>11.72</td>
+													<td>15.0</td>
+													<td>14.35</td>
+													<td>18.7</td>
+													<td>17.58</td>
+													<td>23.2</td>
+													<td>21.52</td>
+													<td>28.6</td>
+													<td>25.97</td>
+													<td>35.2</td>
+													<td>31.12</td>
+												</tr>
+												<tr>
+													<td>355</td>
+													<td>10.9</td>
+													<td>11.92</td>
+													<td>13.6</td>
+													<td>14.75</td>
+													<td>16.9</td>
+													<td>18.19</td>
+													<td>21.1</td>
+													<td>22.43</td>
+													<td>26.1</td>
+													<td>27.28</td>
+													<td>32.2</td>
+													<td>32.94</td>
+													<td>39.7</td>
+													<td>39.61</td>
+												</tr>
+												<tr>
+													<td>400</td>
+													<td>12.3</td>
+													<td>15.26</td>
+													<td>15.3</td>
+													<td>18.80</td>
+													<td>19.1</td>
+													<td>23.14</td>
+													<td>23.7</td>
+													<td>28.29</td>
+													<td>29.4</td>
+													<td>34.56</td>
+													<td>36.3</td>
+													<td>41.84</td>
+													<td>44.7</td>
+													<td>50.22</td>
+												</tr>
+												<tr>
+													<td>450</td>
+													<td>13.8</td>
+													<td>19.20</td>
+													<td>17.2</td>
+													<td>23.75</td>
+													<td>21.5</td>
+													<td>29.31</td>
+													<td>26.7</td>
+													<td>35.87</td>
+													<td>33.1</td>
+													<td>43.76</td>
+													<td>40.9</td>
+													<td>52.95</td>
+													<td>50.3</td>
+													<td>63.56</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+										<a href="#" download class="product_faq__table_download btn this--primary">Посмотреть таблицу</a>
+									</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Характеристики в зависимости от кольцевой жесткости</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">
+										<div class="product_faq__table_wr">
+											<table class="product_faq__table this--variant_2 table">
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+												<tr>
+													<th rowspan="5" style="font-weight: 500; font-size: 16px;">Номинальный наружный диаметр труб Dн, мм</th>
+													<th colspan="14" style="font-weight: 500; font-size: 16px;">Номинальное давление 105 Па (1 бар)</th>
+												</tr>
+												<tr>
+													<th colspan="2">ПЭ100 РN 6,3</th>
+													<th colspan="2">ПЭ 100 PN 8</th>
+													<th colspan="2">ПЭ100 РN 9,5</th>
+													<th colspan="2">ПЭ 100 PN 10</th>
+													<th colspan="2">ПЭ 100 PN 12,5</th>
+													<th colspan="2">ПЭ 100 РN 16</th>
+													<th colspan="2">ПЭ100 РN 20</th>
+												</tr>
+												<tr>
+													<th colspan="14" style="font-weight: 500; font-size: 16px;">Стандартное  размерное отношение</th>
+												</tr>
+												<tr>
+													<th colspan="2">SDR 26</th>
+													<th colspan="2">SDR 21</th>
+													<th colspan="2">SDR 17,6</th>
+													<th colspan="2">SDR 17</th>
+													<th colspan="2">SDR 13.6</th>
+													<th colspan="2">SDR 11</th>
+													<th colspan="2">SDR 9</th>
+												</tr>
+												<tr>
+													<th>м•м•</th>
+													<th>м.п.м, кг</th>
+													<th>м•м•</th>
+													<th>м.п.м, кг</th>
+													<th>м•м•</th>
+													<th>м.п.м, кг</th>
+													<th>м•м•</th>
+													<th>м.п.м, кг</th>
+													<th>м•м•</th>
+													<th>м.п.м, кг</th>
+													<th>м•м•</th>
+													<th>м.п.м, кг</th>
+													<th>м•м•</th>
+													<th>м.п.м, кг</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<td>50</td>
+													<td>2,3</td>
+													<td>0,36</td>
+													<td>2,4</td>
+													<td>0,37</td>
+													<td>2,9</td>
+													<td>0,44</td>
+													<td>3,0</td>
+													<td>0,45</td>
+													<td>3,7</td>
+													<td>0,55</td>
+													<td>4,6</td>
+													<td>0,67</td>
+													<td>5,6</td>
+													<td>0,79</td>
+												</tr>
+												<tr>
+													<td>63</td>
+													<td>2,5</td>
+													<td>0,49</td>
+													<td>3,0</td>
+													<td>5,58</td>
+													<td>3,6</td>
+													<td>0,69</td>
+													<td>3,8</td>
+													<td>0,72</td>
+													<td>4,7</td>
+													<td>0,88</td>
+													<td>5,8</td>
+													<td>1,06</td>
+													<td>7,1</td>
+													<td>1,26</td>
+												</tr>
+												<tr>
+													<td>75</td>
+													<td>2,9</td>
+													<td>0,68</td>
+													<td>3,6</td>
+													<td>0,83</td>
+													<td>4,3</td>
+													<td>0,98</td>
+													<td>4,5</td>
+													<td>1,02</td>
+													<td>5,6</td>
+													<td>1,24</td>
+													<td>6,8</td>
+													<td>1,48</td>
+													<td>8,4</td>
+													<td>1,78</td>
+												</tr>
+												<tr>
+													<td>90</td>
+													<td>3,5</td>
+													<td>0,98</td>
+													<td>4,3</td>
+													<td>1,19</td>
+													<td>5,2</td>
+													<td>1,44</td>
+													<td>5,4</td>
+													<td>1,47</td>
+													<td>6,7</td>
+													<td>1,78</td>
+													<td>8,2</td>
+													<td>2,14</td>
+													<td>10,1</td>
+													<td>2,57</td>
+												</tr>
+												<tr>
+													<td>110</td>
+													<td>4,2</td>
+													<td>1,43</td>
+													<td>5,3</td>
+													<td>1,79</td>
+													<td>6,3</td>
+													<td>2,09</td>
+													<td>6,6</td>
+													<td>2,18</td>
+													<td>8,1</td>
+													<td>2,64</td>
+													<td>10,0</td>
+													<td>3,17</td>
+													<td>12,3</td>
+													<td>3,82</td>
+												</tr>
+												<tr>
+													<td>125</td>
+													<td>4,8</td>
+													<td>1,85</td>
+													<td>6,0</td>
+													<td>2,28</td>
+													<td>7,1</td>
+													<td>2,69</td>
+													<td>7,4</td>
+													<td>2,78</td>
+													<td>9,2</td>
+													<td>3,41</td>
+													<td>11,4</td>
+													<td>4,12</td>
+													<td>14,0</td>
+													<td>4,92</td>
+												</tr>
+												<tr>
+													<td>140</td>
+													<td>5,4</td>
+													<td>2,33</td>
+													<td>6,7</td>
+													<td>2,86</td>
+													<td>8,0</td>
+													<td>3,39</td>
+													<td>8,3</td>
+													<td>3,50</td>
+													<td>10,3</td>
+													<td>4,26</td>
+													<td>12,7</td>
+													<td>5,13</td>
+													<td>15,7</td>
+													<td>6,18</td>
+												</tr>
+												<tr>
+													<td>160</td>
+													<td>6,2</td>
+													<td>3,06</td>
+													<td>7,7</td>
+													<td>3,75</td>
+													<td>9,1</td>
+													<td>4,40</td>
+													<td>9,5</td>
+													<td>4,56</td>
+													<td>11,8</td>
+													<td>5,56</td>
+													<td>14,6</td>
+													<td>6,74</td>
+													<td>17,9</td>
+													<td>8,05</td>
+												</tr>
+												<tr>
+													<td>180</td>
+													<td>6,9</td>
+													<td>3,82</td>
+													<td>8,6</td>
+													<td>4,71</td>
+													<td>10,3</td>
+													<td>5,58</td>
+													<td>10,7</td>
+													<td>5,77</td>
+													<td>13,3</td>
+													<td>7,05</td>
+													<td>16,4</td>
+													<td>8,52</td>
+													<td>20,1</td>
+													<td>10,21</td>
+												</tr>
+												<tr>
+													<td>200</td>
+													<td>7,7</td>
+													<td>4,73</td>
+													<td>9,6</td>
+													<td>5,83</td>
+													<td>11,4</td>
+													<td>6,85</td>
+													<td>11,9</td>
+													<td>7,11</td>
+													<td>14,7</td>
+													<td>8,65</td>
+													<td>18,2</td>
+													<td>10,51</td>
+													<td>22,4</td>
+													<td>12,63</td>
+												</tr>
+												<tr>
+													<td>225</td>
+													<td>8,6</td>
+													<td>5,94</td>
+													<td>10,8</td>
+													<td>7,37</td>
+													<td>12,8</td>
+													<td>8,64</td>
+													<td>13,4</td>
+													<td>9,03</td>
+													<td>16,6</td>
+													<td>11,01</td>
+													<td>20,5</td>
+													<td>13,34</td>
+													<td>25,2</td>
+													<td>15,97</td>
+												</tr>
+												<tr>
+													<td>250</td>
+													<td>9,6</td>
+													<td>7,37</td>
+													<td>11,9</td>
+													<td>9,01</td>
+													<td>14,2</td>
+													<td>10,71</td>
+													<td>14,8</td>
+													<td>11,12</td>
+													<td>18,4</td>
+													<td>13,54</td>
+													<td>22,7</td>
+													<td>16,37</td>
+													<td>27,9</td>
+													<td>19,60</td>
+												</tr>
+												<tr>
+													<td>280</td>
+													<td>10,7</td>
+													<td>9,19</td>
+													<td>13,4</td>
+													<td>11,42</td>
+													<td>15,9</td>
+													<td>13,34</td>
+													<td>16,6</td>
+													<td>13,95</td>
+													<td>20,6</td>
+													<td>16,98</td>
+													<td>25,4</td>
+													<td>20,51</td>
+													<td>31,3</td>
+													<td>24,66</td>
+												</tr>
+												<tr>
+													<td>315</td>
+													<td>12,1</td>
+													<td>11,72</td>
+													<td>15,0</td>
+													<td>14,35</td>
+													<td>17,9</td>
+													<td>16,88</td>
+													<td>18,7</td>
+													<td>17,58</td>
+													<td>23,2</td>
+													<td>21,52</td>
+													<td>28,6</td>
+													<td>25,97</td>
+													<td>35,2</td>
+													<td>31,12</td>
+												</tr>
+												<tr>
+													<td>355</td>
+													<td>13,6</td>
+													<td>14,75</td>
+													<td>16,9</td>
+													<td>18,19</td>
+													<td>20,2</td>
+													<td>21,53</td>
+													<td>21,1</td>
+													<td>22,43</td>
+													<td>26,1</td>
+													<td>27,28</td>
+													<td>32,2</td>
+													<td>32,94</td>
+													<td>39,7</td>
+													<td>39,61</td>
+												</tr>
+												<tr>
+													<td>400</td>
+													<td>15,3</td>
+													<td>18,80</td>
+													<td>19,1</td>
+													<td>23,14</td>
+													<td>22,8</td>
+													<td>7,80</td>
+													<td>23,7</td>
+													<td>28,29</td>
+													<td>29,4</td>
+													<td>34,56</td>
+													<td>36,3</td>
+													<td>41,84</td>
+													<td>44,7</td>
+													<td>50,22</td>
+												</tr>
+												<tr>
+													<td>450</td>
+													<td>17,2</td>
+													<td>23,75</td>
+													<td>21,5</td>
+													<td>29,31</td>
+													<td>25,6</td>
+													<td>34,49</td>
+													<td>26,7</td>
+													<td>35,87</td>
+													<td>33,1</td>
+													<td>43,76</td>
+													<td>40,9</td>
+													<td>52,95</td>
+													<td>50,3</td>
+													<td>63,56</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+										<a href="#" download class="product_faq__table_download btn this--primary">Посмотреть таблицу</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product_cases main_cases">
+				<div class="container">
+					<div class="main_cases__content">
+						<div class="main_cases__top">
+							<h2 class="main_cases__title h2_title">Объекты с нашей продукцией</h2>
+							<div class="main_cases__controls slider_controls">
+								<div class="main_cases__arrow_prev slider_arrow this--prev js_cases_slider_prev">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 17L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="main_cases__arrow_next slider_arrow this--next js_cases_slider_next">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 17L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="main_cases__slider swiper-container js_cases_slider">
+							<div class="main_cases__slider_wrapper swiper-wrapper">
+								<div class="main_cases__slider_slide swiper-slide">
+									<a href="#" class="main_cases__item case">
+										<div class="case__img">
+											<img src="./img/main/main_cases/img_1.jpg" alt="">
+											<div class="case__hover">
+												<div class="case__hover_body">Смотреть<br>проект</div>
+											</div>
+										</div>
+										<div class="case__tags">
+											<div class="case__tag">Москва</div>
+											<div class="case__tag">2024 г.</div>
+										</div>
+										<h4 class="case__title h4_title">Строительство кабельной
+											линиии 35 кВ</h4>
+										<div class="case__text">Двухслойные термостойкие трубы ТЗК ЭНЕРГОПЛАСТ®БК ø 160 мм
+											SN 32</div>
+									</a>
+								</div>
+								<div class="main_cases__slider_slide swiper-slide">
+									<a href="#" class="main_cases__item case">
+										<div class="case__img">
+											<img src="./img/main/main_cases/img_1.jpg" alt="">
+											<div class="case__hover">
+												<div class="case__hover_body">Смотреть<br>проект</div>
+											</div>
+										</div>
+										<div class="case__tags">
+											<div class="case__tag">Москва</div>
+											<div class="case__tag">2024 г.</div>
+										</div>
+										<h4 class="case__title h4_title">Строительство кабельной
+											линиии 35 кВ</h4>
+										<div class="case__text">Двухслойные термостойкие трубы ТЗК ЭНЕРГОПЛАСТ®БК ø 160 мм
+											SN 32</div>
+									</a>
+								</div>
+								<div class="main_cases__slider_slide swiper-slide">
+									<a href="#" class="main_cases__item case">
+										<div class="case__img">
+											<img src="./img/main/main_cases/img_1.jpg" alt="">
+											<div class="case__hover">
+												<div class="case__hover_body">Смотреть<br>проект</div>
+											</div>
+										</div>
+										<div class="case__tags">
+											<div class="case__tag">Москва</div>
+											<div class="case__tag">2024 г.</div>
+										</div>
+										<h4 class="case__title h4_title">Строительство кабельной
+											линиии 35 кВ</h4>
+										<div class="case__text">Двухслойные термостойкие трубы ТЗК ЭНЕРГОПЛАСТ®БК ø 160 мм
+											SN 32</div>
+									</a>
+								</div>
+								<div class="main_cases__slider_slide swiper-slide">
+									<a href="#" class="main_cases__item case">
+										<div class="case__img">
+											<img src="./img/main/main_cases/img_1.jpg" alt="">
+											<div class="case__hover">
+												<div class="case__hover_body">Смотреть<br>проект</div>
+											</div>
+										</div>
+										<div class="case__tags">
+											<div class="case__tag">Москва</div>
+											<div class="case__tag">2024 г.</div>
+										</div>
+										<h4 class="case__title h4_title">Строительство кабельной
+											линиии 35 кВ</h4>
+										<div class="case__text">Двухслойные термостойкие трубы ТЗК ЭНЕРГОПЛАСТ®БК ø 160 мм
+											SN 32</div>
+									</a>
+								</div>
+								<div class="main_cases__slider_slide swiper-slide">
+									<a href="#" class="main_cases__item case">
+										<div class="case__img">
+											<img src="./img/main/main_cases/img_1.jpg" alt="">
+											<div class="case__hover">
+												<div class="case__hover_body">Смотреть<br>проект</div>
+											</div>
+										</div>
+										<div class="case__tags">
+											<div class="case__tag">Москва</div>
+											<div class="case__tag">2024 г.</div>
+										</div>
+										<h4 class="case__title h4_title">Строительство кабельной
+											линиии 35 кВ</h4>
+										<div class="case__text">Двухслойные термостойкие трубы ТЗК ЭНЕРГОПЛАСТ®БК ø 160 мм
+											SN 32</div>
+									</a>
+								</div>
+								<div class="main_cases__slider_slide swiper-slide">
+									<a href="#" class="main_cases__item case">
+										<div class="case__img">
+											<img src="./img/main/main_cases/img_1.jpg" alt="">
+											<div class="case__hover">
+												<div class="case__hover_body">Смотреть<br>проект</div>
+											</div>
+										</div>
+										<div class="case__tags">
+											<div class="case__tag">Москва</div>
+											<div class="case__tag">2024 г.</div>
+										</div>
+										<h4 class="case__title h4_title">Строительство кабельной
+											линиии 35 кВ</h4>
+										<div class="case__text">Двухслойные термостойкие трубы ТЗК ЭНЕРГОПЛАСТ®БК ø 160 мм
+											SN 32</div>
+									</a>
+								</div>
+							</div>
+							<div class="main_cases__slider_pagination slider_pagination js_cases_slider_pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product_form callback_form">
+				<div class="container">
+					<div class="callback_form__content">
+						<div class="callback_form__left">
+							<h2 class="callback_form__title h2_title">Свяжитесь с нами</h2>
+							<div class="callback_form__text">Оставьте контакты, менеджер свяжется
+								с вами <span>в ближайшее время</span></div>
+							<div class="callback_form__logo">
+								<img src="./img/callback_form/logo.png" alt="">
+							</div>
+						</div>
+						<div class="callback_form__center">
+							<div class="callback_form__man">
+								<img src="./img/callback_form/form_man.png" alt="">
+							</div>
+						</div>
+						<div class="callback_form__right">
+							<form class="callback_form__form">
+								<div class="callback_form__inputs">
+									<div class="callback_form__input_wr">
+										<div class="callback_form__input_title">Имя</div>
+										<input type="text" placeholder="Введите имя" class="callback_form__input">
+									</div>
+									<div class="callback_form__input_wr">
+										<div class="callback_form__input_title">Телефон</div>
+										<input type="tel" placeholder="+7 (999) 000 99-00" class="callback_form__input js_input_tel">
+									</div>
+									<div class="callback_form__input_wr">
+										<div class="callback_form__input_title">E-mail</div>
+										<input type="email" placeholder="info@corp.ru" class="callback_form__input">
+									</div>
+								</div>
+								<div class="callback_form__form_bottom">
+									<input type="submit" class="callback_form__submit btn this--wh" value="Отправить">
+									<div class="callback_form__agree">
+										<input type="checkbox" name="agree" id="agree">
+										<label for="agree">
+											Я даю согласие на обработку<br><a href="#">персональных данных</a>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product_recommend case_recommend">
+				<div class="container">
+					<div class="case_recommend__content">
+						<div class="case_recommend__top">
+							<h2 class="case_recommend__title h2_title">Нас рекомендуют</h2>
+							<div class="case_recommend__controls slider_controls">
+								<div class="case_recommend__arrow_prev slider_arrow this--prev js_case_recommend_slider_prev">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 17L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="case_recommend__arrow_next slider_arrow this--next js_case_recommend_slider_next">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 17L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="case_recommend__slider swiper-container js_case_recommend_slider">
+							<div class="case_recommend__slider_wrapper swiper-wrapper">
+								<div class="case_recommend__slider_slide swiper-slide">
+									<div class="case_recommend__item">
+										<div class="case_recommend__item_logo">
+											<img src="./img/case/case_recommend/logo_1.png" alt="">
+										</div>
+										<div class="case_recommend__item_text">
+											За время сотрудничества компания Энергопласт зарекомендовали себя как квалифицированные специалисты, продемонстрировали эффективность и высокое качество представленных результатов. Надеемся на продолжение сотрудничества в рамках будущих проектов
+										</div>
+										<div class="case_recommend__item_bottom">
+											<div class="case_recommend__item_author">
+												<div class="case_recommend__item_author_name">
+													В.И. Прошин
+												</div>
+												<div class="case_recommend__item_author_job">
+													Заместитель генерального директора
+												</div>
+											</div>
+											<a href="#" download class="case_recommend__item_link">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.9079 14.9715C12.8074 14.8766 12.68 14.8123 12.5256 14.7789C12.4102 14.7529 12.1842 14.7397 11.8476 14.7397H11.4766V17.449H12.0932C12.3238 17.449 12.4902 17.436 12.5926 17.4099C12.7265 17.3765 12.8377 17.3198 12.9261 17.2397C13.0143 17.1597 13.0864 17.0281 13.1422 16.845C13.198 16.6618 13.2259 16.412 13.2259 16.0957C13.2259 15.7797 13.198 15.5368 13.1422 15.3676C13.0864 15.1984 13.0083 15.0663 12.9079 14.9715Z" fill="currentColor"/>
+													<path d="M8.66121 14.7677C8.56257 14.7492 8.36448 14.7397 8.06696 14.7397H7.66797V15.9004H8.11995C8.44541 15.9004 8.66302 15.8792 8.77281 15.8363C8.88254 15.7935 8.96859 15.7266 9.03095 15.6355C9.09324 15.5444 9.1244 15.4384 9.1244 15.3174C9.1244 15.1685 9.08064 15.0457 8.99326 14.9491C8.90577 14.8525 8.79515 14.792 8.66121 14.7677Z" fill="currentColor"/>
+													<path d="M16.1892 3.42822H13.5299H12.0191H7.80524C5.39043 3.42822 3.42578 5.39287 3.42578 7.80769V16.1914C3.42578 18.6063 5.39043 20.5711 7.80524 20.5711H16.1892C18.604 20.5711 20.5686 18.6063 20.5686 16.1914V11.8039V10.2676V7.80769C20.5686 5.39287 18.604 3.42822 16.1892 3.42822ZM9.83442 15.9392C9.74322 16.1104 9.62748 16.2448 9.48696 16.3425C9.34656 16.4401 9.20385 16.5048 9.05879 16.5363C8.86159 16.5753 8.5761 16.5949 8.20222 16.5949H7.66374V18.1377H6.8379V14.0475H8.16317C8.66536 14.0475 8.9927 14.0681 9.14529 14.1089C9.37962 14.1703 9.57583 14.3038 9.73398 14.5093C9.89199 14.7149 9.9711 14.9805 9.9711 15.306C9.9711 15.5571 9.92545 15.7682 9.83442 15.9392ZM13.9497 17.0023C13.8474 17.2998 13.7014 17.5407 13.5116 17.7248C13.3684 17.8643 13.175 17.9732 12.9313 18.0514C12.749 18.109 12.5054 18.1377 12.2004 18.1377H10.6463V14.0475H12.1557C12.4961 14.0475 12.7556 14.0737 12.9341 14.1256C13.1741 14.1964 13.3795 14.3221 13.5507 14.5024C13.7218 14.6828 13.852 14.9037 13.9414 15.1651C14.0306 15.4263 14.0752 15.7485 14.0752 16.1318C14.0752 16.4684 14.0334 16.7586 13.9497 17.0023ZM17.5851 14.7395H15.607V15.7077H17.3145V16.3997H15.607V18.1377H14.7811V14.0475H17.5851V14.7395ZM19.3174 11.0435C18.7224 11.2982 18.0679 11.4396 17.3808 11.4396C14.661 11.4396 12.4481 9.22677 12.4481 6.50704C12.4481 5.86152 12.5729 5.24482 12.7993 4.67947H16.1892C17.914 4.67947 19.3174 6.08279 19.3174 7.80769V11.0435Z" fill="currentColor"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="case_recommend__slider_slide swiper-slide">
+									<div class="case_recommend__item">
+										<div class="case_recommend__item_logo">
+											<img src="./img/case/case_recommend/logo_2.png" alt="">
+										</div>
+										<div class="case_recommend__item_text">
+											За время сотрудничества компания Энергопласт зарекомендовали себя как квалифицированные специалисты, продемонстрировали эффективность и высокое качество представленных результатов. Надеемся на продолжение сотрудничества в рамках будущих проектов За время сотрудничества компания Энергопласт зарекомендовали себя как квалифицированные специалисты, продемонстрировали эффективность и высокое качество представленных результатов.
+										</div>
+										<div class="case_recommend__item_bottom">
+											<div class="case_recommend__item_author">
+												<div class="case_recommend__item_author_name">
+													В.И. Прошин
+												</div>
+												<div class="case_recommend__item_author_job">
+													Заместитель генерального директора
+												</div>
+											</div>
+											<a href="#" download class="case_recommend__item_link">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.9079 14.9715C12.8074 14.8766 12.68 14.8123 12.5256 14.7789C12.4102 14.7529 12.1842 14.7397 11.8476 14.7397H11.4766V17.449H12.0932C12.3238 17.449 12.4902 17.436 12.5926 17.4099C12.7265 17.3765 12.8377 17.3198 12.9261 17.2397C13.0143 17.1597 13.0864 17.0281 13.1422 16.845C13.198 16.6618 13.2259 16.412 13.2259 16.0957C13.2259 15.7797 13.198 15.5368 13.1422 15.3676C13.0864 15.1984 13.0083 15.0663 12.9079 14.9715Z" fill="currentColor"/>
+													<path d="M8.66121 14.7677C8.56257 14.7492 8.36448 14.7397 8.06696 14.7397H7.66797V15.9004H8.11995C8.44541 15.9004 8.66302 15.8792 8.77281 15.8363C8.88254 15.7935 8.96859 15.7266 9.03095 15.6355C9.09324 15.5444 9.1244 15.4384 9.1244 15.3174C9.1244 15.1685 9.08064 15.0457 8.99326 14.9491C8.90577 14.8525 8.79515 14.792 8.66121 14.7677Z" fill="currentColor"/>
+													<path d="M16.1892 3.42822H13.5299H12.0191H7.80524C5.39043 3.42822 3.42578 5.39287 3.42578 7.80769V16.1914C3.42578 18.6063 5.39043 20.5711 7.80524 20.5711H16.1892C18.604 20.5711 20.5686 18.6063 20.5686 16.1914V11.8039V10.2676V7.80769C20.5686 5.39287 18.604 3.42822 16.1892 3.42822ZM9.83442 15.9392C9.74322 16.1104 9.62748 16.2448 9.48696 16.3425C9.34656 16.4401 9.20385 16.5048 9.05879 16.5363C8.86159 16.5753 8.5761 16.5949 8.20222 16.5949H7.66374V18.1377H6.8379V14.0475H8.16317C8.66536 14.0475 8.9927 14.0681 9.14529 14.1089C9.37962 14.1703 9.57583 14.3038 9.73398 14.5093C9.89199 14.7149 9.9711 14.9805 9.9711 15.306C9.9711 15.5571 9.92545 15.7682 9.83442 15.9392ZM13.9497 17.0023C13.8474 17.2998 13.7014 17.5407 13.5116 17.7248C13.3684 17.8643 13.175 17.9732 12.9313 18.0514C12.749 18.109 12.5054 18.1377 12.2004 18.1377H10.6463V14.0475H12.1557C12.4961 14.0475 12.7556 14.0737 12.9341 14.1256C13.1741 14.1964 13.3795 14.3221 13.5507 14.5024C13.7218 14.6828 13.852 14.9037 13.9414 15.1651C14.0306 15.4263 14.0752 15.7485 14.0752 16.1318C14.0752 16.4684 14.0334 16.7586 13.9497 17.0023ZM17.5851 14.7395H15.607V15.7077H17.3145V16.3997H15.607V18.1377H14.7811V14.0475H17.5851V14.7395ZM19.3174 11.0435C18.7224 11.2982 18.0679 11.4396 17.3808 11.4396C14.661 11.4396 12.4481 9.22677 12.4481 6.50704C12.4481 5.86152 12.5729 5.24482 12.7993 4.67947H16.1892C17.914 4.67947 19.3174 6.08279 19.3174 7.80769V11.0435Z" fill="currentColor"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="case_recommend__slider_slide swiper-slide">
+									<div class="case_recommend__item">
+										<div class="case_recommend__item_logo">
+											<img src="./img/case/case_recommend/logo_1.png" alt="">
+										</div>
+										<div class="case_recommend__item_text">
+											За время сотрудничества компания Энергопласт зарекомендовали себя как квалифицированные специалисты, продемонстрировали эффективность и высокое качество представленных результатов. Надеемся на продолжение сотрудничества в рамках будущих проектов
+										</div>
+										<div class="case_recommend__item_bottom">
+											<div class="case_recommend__item_author">
+												<div class="case_recommend__item_author_name">
+													В.И. Прошин
+												</div>
+												<div class="case_recommend__item_author_job">
+													Заместитель генерального директора
+												</div>
+											</div>
+											<a href="#" download class="case_recommend__item_link">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.9079 14.9715C12.8074 14.8766 12.68 14.8123 12.5256 14.7789C12.4102 14.7529 12.1842 14.7397 11.8476 14.7397H11.4766V17.449H12.0932C12.3238 17.449 12.4902 17.436 12.5926 17.4099C12.7265 17.3765 12.8377 17.3198 12.9261 17.2397C13.0143 17.1597 13.0864 17.0281 13.1422 16.845C13.198 16.6618 13.2259 16.412 13.2259 16.0957C13.2259 15.7797 13.198 15.5368 13.1422 15.3676C13.0864 15.1984 13.0083 15.0663 12.9079 14.9715Z" fill="currentColor"/>
+													<path d="M8.66121 14.7677C8.56257 14.7492 8.36448 14.7397 8.06696 14.7397H7.66797V15.9004H8.11995C8.44541 15.9004 8.66302 15.8792 8.77281 15.8363C8.88254 15.7935 8.96859 15.7266 9.03095 15.6355C9.09324 15.5444 9.1244 15.4384 9.1244 15.3174C9.1244 15.1685 9.08064 15.0457 8.99326 14.9491C8.90577 14.8525 8.79515 14.792 8.66121 14.7677Z" fill="currentColor"/>
+													<path d="M16.1892 3.42822H13.5299H12.0191H7.80524C5.39043 3.42822 3.42578 5.39287 3.42578 7.80769V16.1914C3.42578 18.6063 5.39043 20.5711 7.80524 20.5711H16.1892C18.604 20.5711 20.5686 18.6063 20.5686 16.1914V11.8039V10.2676V7.80769C20.5686 5.39287 18.604 3.42822 16.1892 3.42822ZM9.83442 15.9392C9.74322 16.1104 9.62748 16.2448 9.48696 16.3425C9.34656 16.4401 9.20385 16.5048 9.05879 16.5363C8.86159 16.5753 8.5761 16.5949 8.20222 16.5949H7.66374V18.1377H6.8379V14.0475H8.16317C8.66536 14.0475 8.9927 14.0681 9.14529 14.1089C9.37962 14.1703 9.57583 14.3038 9.73398 14.5093C9.89199 14.7149 9.9711 14.9805 9.9711 15.306C9.9711 15.5571 9.92545 15.7682 9.83442 15.9392ZM13.9497 17.0023C13.8474 17.2998 13.7014 17.5407 13.5116 17.7248C13.3684 17.8643 13.175 17.9732 12.9313 18.0514C12.749 18.109 12.5054 18.1377 12.2004 18.1377H10.6463V14.0475H12.1557C12.4961 14.0475 12.7556 14.0737 12.9341 14.1256C13.1741 14.1964 13.3795 14.3221 13.5507 14.5024C13.7218 14.6828 13.852 14.9037 13.9414 15.1651C14.0306 15.4263 14.0752 15.7485 14.0752 16.1318C14.0752 16.4684 14.0334 16.7586 13.9497 17.0023ZM17.5851 14.7395H15.607V15.7077H17.3145V16.3997H15.607V18.1377H14.7811V14.0475H17.5851V14.7395ZM19.3174 11.0435C18.7224 11.2982 18.0679 11.4396 17.3808 11.4396C14.661 11.4396 12.4481 9.22677 12.4481 6.50704C12.4481 5.86152 12.5729 5.24482 12.7993 4.67947H16.1892C17.914 4.67947 19.3174 6.08279 19.3174 7.80769V11.0435Z" fill="currentColor"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="case_recommend__slider_pagination slider_pagination js_case_recommend_slider_pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product_also">
+				<div class="container">
+					<div class="product_also__content">
+						<div class="product_also__top">
+							<h2 class="product_also__title h2_title">Смотрите также</h2>
+							<div class="product_also__controls slider_controls">
+								<div class="product_also__arrow_prev slider_arrow this--prev js_product_also_slider_prev">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 17L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="product_also__arrow_next slider_arrow this--next js_product_also_slider_next">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 17L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="product_also__slider swiper-container js_product_also_slider">
+							<div class="product_also__slider_wrapper swiper-wrapper">
+								<div class="product_also__slider_slide swiper-slide">
+									<a href="#" class="product_also__item">
+										<div class="product_also__item_img">
+											<img src="./img/product/also.png" alt="">
+											<div class="product_also__item_tooltips">
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Оболочка SAFE</div>
+												</div>
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+										</div>
+										<div class="product_also__item_tags">
+											<div class="product_also__item_tag tag">Для защиты кабеля</div>
+										</div>
+										<h4 class="product_also__item_title h4_title">Трехслойные термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® ТС
+										</h4>
+										<div class="product_also__item_btn btn this--border">Смотреть от 999 ₽/м</div>
+									</a>
+								</div>
+								<div class="product_also__slider_slide swiper-slide">
+									<a href="#" class="product_also__item">
+										<div class="product_also__item_img">
+											<img src="./img/product/also.png" alt="">
+											<div class="product_also__item_tooltips">
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Оболочка SAFE</div>
+												</div>
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+										</div>
+										<div class="product_also__item_tags">
+											<div class="product_also__item_tag tag">Для защиты кабеля</div>
+										</div>
+										<h4 class="product_also__item_title h4_title">Двухслойные термостойкие трубы с внутренним негорючим слоем
+											ТЗК ЭНЕРГОПЛАСТ®
+											ТС 2
+										</h4>
+										<div class="product_also__item_btn btn this--border">Смотреть от 999 ₽/м</div>
+									</a>
+								</div>
+								<div class="product_also__slider_slide swiper-slide">
+									<a href="#" class="product_also__item">
+										<div class="product_also__item_img">
+											<img src="./img/product/also.png" alt="">
+											<div class="product_also__item_tooltips">
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Оболочка SAFE</div>
+												</div>
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+										</div>
+										<div class="product_also__item_tags">
+											<div class="product_also__item_tag tag">Для защиты кабеля</div>
+										</div>
+										<h4 class="product_also__item_title h4_title">Трехслойные термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® ТС
+										</h4>
+										<div class="product_also__item_btn btn this--border">Смотреть от 999 ₽/м</div>
+									</a>
+								</div>
+								<div class="product_also__slider_slide swiper-slide">
+									<a href="#" class="product_also__item">
+										<div class="product_also__item_img">
+											<img src="./img/product/also.png" alt="">
+											<div class="product_also__item_tooltips">
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Оболочка SAFE</div>
+												</div>
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+										</div>
+										<div class="product_also__item_tags">
+											<div class="product_also__item_tag tag">Для защиты кабеля</div>
+										</div>
+										<h4 class="product_also__item_title h4_title">Двухслойные термостойкие трубы с внутренним негорючим слоем
+											ТЗК ЭНЕРГОПЛАСТ®
+											ТС 2
+										</h4>
+										<div class="product_also__item_btn btn this--border">Смотреть от 999 ₽/м</div>
+									</a>
+								</div>
+								<div class="product_also__slider_slide swiper-slide">
+									<a href="#" class="product_also__item">
+										<div class="product_also__item_img">
+											<img src="./img/product/also.png" alt="">
+											<div class="product_also__item_tooltips">
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Оболочка SAFE</div>
+												</div>
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+										</div>
+										<div class="product_also__item_tags">
+											<div class="product_also__item_tag tag">Для защиты кабеля</div>
+										</div>
+										<h4 class="product_also__item_title h4_title">Трехслойные термостойкие трубы ТЗК ЭНЕРГОПЛАСТ® ТС
+										</h4>
+										<div class="product_also__item_btn btn this--border">Смотреть от 999 ₽/м</div>
+									</a>
+								</div>
+								<div class="product_also__slider_slide swiper-slide">
+									<a href="#" class="product_also__item">
+										<div class="product_also__item_img">
+											<img src="./img/product/also.png" alt="">
+											<div class="product_also__item_tooltips">
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/shield.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Оболочка SAFE</div>
+												</div>
+												<div class="product_also__item_tooltip">
+													<div class="product_also__item_tooltip_icon">
+														<img src="./img/icons/no-fire.svg" alt="">
+													</div>
+													<div class="product_also__item_tooltip_text">Негорючий слой</div>
+												</div>
+											</div>
+										</div>
+										<div class="product_also__item_tags">
+											<div class="product_also__item_tag tag">Для защиты кабеля</div>
+										</div>
+										<h4 class="product_also__item_title h4_title">Двухслойные термостойкие трубы с внутренним негорючим слоем
+											ТЗК ЭНЕРГОПЛАСТ®
+											ТС 2
+										</h4>
+										<div class="product_also__item_btn btn this--border">Смотреть от 999 ₽/м</div>
+									</a>
+								</div>
+							</div>
+							<div class="product_also__slider_pagination slider_pagination js_product_also_slider_pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product_faq faq">
+				<div class="container">
+					<div class="faq__content">
+						<h2 class="faq__title h2_title">Ответы на частые вопросы</h2>
+						<div class="faq__accordions js_accordions">
+							<div class="faq__accordion accordion active js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Какие виды продукции вы производите?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Мы специализируемся на производстве труб, соединительных элементов и комплектующих для систем водоснабжение, канализации, теплоснабжения и кабельной защиты. Весь ассортимент соответствует ГОСТ и ТУ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Можно ли заказать продукцию по индивидуальным параметрам?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Мы специализируемся на производстве труб, соединительных элементов и комплектующих для систем водоснабжение, канализации, теплоснабжения и кабельной защиты. Весь ассортимент соответствует ГОСТ и ТУ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Работаете ли вы с регионами?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Мы специализируемся на производстве труб, соединительных элементов и комплектующих для систем водоснабжение, канализации, теплоснабжения и кабельной защиты. Весь ассортимент соответствует ГОСТ и ТУ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Как быстро осуществляется отгрузка?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Мы специализируемся на производстве труб, соединительных элементов и комплектующих для систем водоснабжение, канализации, теплоснабжения и кабельной защиты. Весь ассортимент соответствует ГОСТ и ТУ</div>
+								</div>
+							</div>
+							<div class="faq__accordion accordion js_accordion">
+								<div class="accordion__head js_accordion_head">
+									<div class="accordion__title h4_title">Есть ли сертификаты на продукцию?</div>
+									<div class="accordion__arrow"></div>
+								</div>
+								<div class="accordion__body js_accordion_body">
+									<div class="accordion__body_content">Мы специализируемся на производстве труб, соединительных элементов и комплектующих для систем водоснабжение, канализации, теплоснабжения и кабельной защиты. Весь ассортимент соответствует ГОСТ и ТУ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="footer__top_content">
+						<div class="footer__group">
+							<div class="footer__left">
+								<div class="footer__logo">
+									<img src="./img/footer/logo.svg" alt="">
+								</div>
+								<div class="footer__text">
+									Трубный завод Энергопласт предлагает купить трехслойные термостойкие трубы в Санкт-Петербурге от производителя
+								</div>
+								<button class="footer__form_btn btn this--primary">Написать нам</button>
+								<div class="footer__social">
+									<div class="footer__social_links">
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/tg.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/vk.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/dzen.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/rutube.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/youtube.svg" alt="">
+										</a>
+										<a href="#" class="footer__social_link">
+											<img src="./img/icons/instagram.svg" alt="">
+											<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M3.21988 8L3.36894 5.05967L0.785093 6.65394L0 5.35561L2.73292 4.00955L0 2.66348L0.785093 1.34606L3.36894 2.94033L3.21988 0H4.78012L4.64099 2.94033L7.22484 1.34606L8 2.66348L5.26708 4.00955L8 5.35561L7.22484 6.65394L4.64099 5.05967L4.78012 8H3.21988Z" fill="#ED1D25"/>
+											</svg>
+										</a>
+									</div>
+									<div class="footer__social_note">*Принадлежит Meta, признана экстремистской</div>
+								</div>
+							</div>
+							<div class="footer__nav_menu">
+								<div class="footer__nav_menu_title">Покупателям</div>
+								<ul class="footer__nav_menu_list">
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Производство</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Продукция</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Проектировщикам</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Кейсы</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Контакты</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Блог</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Конференция</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__nav_menu">
+								<div class="footer__nav_menu_title">О компании</div>
+								<ul class="footer__nav_menu_list">
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">О компании</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Испытания</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Вакансии</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Логистика</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">СОУТ</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">Новости</a>
+									</li>
+									<li class="footer__nav_menu_item">
+										<a href="#" class="footer__nav_menu_link">СМИ о нас</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__right">
+							<div class="footer__right_title">Контакты</div>
+							<div class="footer__info">
+								<div class="footer__info_item">
+									<div class="footer__info_item_title">Позвоните нам</div>
+									<a href="tel:+78122145951" class="footer__info_item_link">+7 (812) 214 59-51</a>
+								</div>
+								<div class="footer__info_item">
+									<div class="footer__info_item_title">Напишите нам</div>
+									<a href="mainto:info@spbenergoplast.ru" class="footer__info_item_link">info@spbenergoplast.ru</a>
+								</div>
+								<div class="footer__info_item">
+									<div class="footer__info_item_title">Наш адрес</div>
+									<div class="footer__info_item_text">195030, г. Санкт-Петербург, улица<br> Химиков, дом 28, литер АC, офис 1106 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__bottom_content">
+						<div class="footer__bottom_left">
+							<div class="footer__copyright">
+								© 2012-2025 ООО «ЭНЕРГОПЛАСТ»
+							</div>
+						</div>
+						<div class="footer__bottom_right">
+							<a href="#" class="footer__bottom_link">Пользовательское соглашение</a>
+							<a href="#" class="footer__bottom_link">Политика конфиденциальности</a>
+							<div class="footer__develope">Разработка <span>MOS DIGITAL</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/sumoSelect.js"></script>
+	<script src="js/jquery.inputmask.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" type="text/javascript"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

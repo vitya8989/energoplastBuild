@@ -74,28 +74,28 @@ h6 {
   font-weight: 700
 }
 @font-face {
-  font-family: InterDisplay;
+  font-family: Roboto;
   font-display: swap;
-  src: url(../fonts/InterDisplay-Medium.woff) format("woff"),url(../fonts/InterDisplay-Medium.woff2) format("woff2");
+  src: url(../fonts/Roboto-Medium.woff) format("woff"),url(../fonts/Roboto-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal
 }
 @font-face {
-  font-family: InterDisplay;
+  font-family: Roboto;
   font-display: swap;
-  src: url(../fonts/InterDisplay-Regular.woff) format("woff"),url(../fonts/InterDisplay-Regular.woff2) format("woff2");
+  src: url(../fonts/Roboto-Regular.woff) format("woff"),url(../fonts/Roboto-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal
 }
 @font-face {
-  font-family: InterDisplay;
+  font-family: Roboto;
   font-display: swap;
-  src: url(../fonts/InterDisplay-SemiBold.woff) format("woff"),url(../fonts/InterDisplay-SemiBold.woff2) format("woff2");
+  src: url(../fonts/Roboto-SemiBold.woff) format("woff"),url(../fonts/Roboto-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-style: normal
 }
 body {
-  font-family: InterDisplay,sans-serif;
+  font-family: Roboto,sans-serif;
   font-weight: 400;
   color: #111
 }
@@ -5049,7 +5049,7 @@ main {
     border-top: 1px solid #e9e9e9;
     border-bottom: none
   }
-  .footer {
+  .product_page + .footer {
     padding-bottom: 98px
   }
   .product_top__buy_block_top {

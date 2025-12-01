@@ -86,7 +86,7 @@
 								</svg>
 								+7 (812) 214 59-51
 							</a>
-							<button class="header__callback_btn btn this--primary">Заказать звонок</button>
+							<button class="header__callback_btn btn this--primary js_open_callback_popup" data-form="top">Заказать звонок</button>
 							<div class="header__burger js_burger">
 								<span></span>
 								<span></span>
@@ -207,7 +207,7 @@
 								</div>
 								<div class="nav__btns">
 									<a href="#" class="nav__lk_link btn this--border">Войти в личный кабинет</a>
-									<button class="nav__callback btn this--primary">Заказать звонок</button>
+									<button class="nav__callback btn this--primary js_open_callback_popup" data-form="top">Заказать звонок</button>
 								</div>
 							</div>
 						</nav>
@@ -2235,7 +2235,7 @@
 								<div class="footer__text">
 									Трубный завод Энергопласт предлагает купить трехслойные термостойкие трубы в Санкт-Петербурге от производителя
 								</div>
-								<button class="footer__form_btn btn this--primary">Написать нам</button>
+								<button class="footer__form_btn btn this--primary js_open_callback_popup" data-form="footer">Написать нам</button>
 								<div class="footer__social">
 									<div class="footer__social_links">
 										<a href="#" class="footer__social_link">
@@ -2353,6 +2353,127 @@
 				</div>
 			</div>
 		</footer>
+		<div class="cookies_popup js_cookies_popup cookies_popup_opened">
+			<div class="cookies_popup__top">
+				<div class="cookies_popup__icon">
+					<img src="img/icons/cookie.svg" alt="">
+				</div>
+				<div class="cookies_popup__title">Cookies</div>
+			</div>
+			<div class="cookies_popup__text">Мы используем файлы Cookie и сервисы сбора и анализа информации для улучшения пользовательского опыта. Продолжая пользоваться Сайтом, вы соглашаетесь на обработку файлов Cookie, на условиях,
+				<a href="#">указанных по ссылке</a>
+			</div>
+			<button class="cookies_popup__btn btn js_close_cookies_popup">Окей</button>
+		</div>
+
+		<div class="callback_popup js_callback_popup">
+			<div class="callback_popup__body js_callback_body_form">
+				<div class="callback_popup__close js_callback_popup_close"></div>
+				<div class="callback_popup__form callback_popup_top_form js_callback_top_form">
+					<div class="callback_popup__title">Заказать звонок</div>
+					<form class="callback_form__form">
+						<div class="callback_form__inputs">
+							<div class="callback_form__input_wr">
+								<div class="callback_form__input_title">Имя *</div>
+								<input type="text" placeholder="Введите имя" class="callback_form__input">
+							</div>
+							<div class="callback_form__input_wr">
+								<div class="callback_form__input_title">Телефон *</div>
+								<input type="tel" placeholder="+7 (999) 000 99-00" class="callback_form__input js_input_tel">
+							</div>
+						</div>
+						<div class="callback_form__form_bottom">
+							<input type="submit" class="callback_form__submit btn this--wh" value="Отправить">
+							<div class="callback_form__agree">
+								<input type="checkbox" name="agree" id="agree_1">
+								<label for="agree_1">
+									Я даю согласие на обработку <a href="#">персональных данных</a>
+									в соответствии с <a href="#">политикой конфиденциальности</a>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="callback_popup__form callback_popup_middle_form js_callback_middle_form">
+					<div class="callback_popup__title">Свяжитесь с нами</div>
+					<div class="callback_popup__text">Оставьте контакты, менеджер свяжется
+						с вами <span>в ближайшее время</span></div>
+					<form class="callback_form__form">
+						<div class="callback_form__inputs">
+							<div class="callback_form__input_wr">
+								<div class="callback_form__input_title">Имя *</div>
+								<input type="text" placeholder="Введите имя" class="callback_form__input">
+							</div>
+							<div class="callback_form__input_wr">
+								<div class="callback_form__input_title">Телефон *</div>
+								<input type="tel" placeholder="+7 (999) 000 99-00" class="callback_form__input js_input_tel">
+							</div>
+							<div class="callback_form__input_wr">
+								<div class="callback_form__input_title">E-mail *</div>
+								<input type="email" placeholder="info@corp.ru" class="callback_form__input">
+							</div>
+						</div>
+						<div class="callback_form__form_bottom">
+							<input type="submit" class="callback_form__submit btn this--wh" value="Отправить">
+							<div class="callback_form__agree">
+								<input type="checkbox" name="agree" id="agree_2">
+								<label for="agree_2">
+									Я даю согласие на обработку <a href="#">персональных данных</a>
+									в соответствии с <a href="#">политикой конфиденциальности</a>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="callback_popup__form callback_popup_footer_form js_callback_footer_form">
+					<div class="callback_popup__title">Свяжитесь с нами</div>
+					<div class="callback_popup__text">Оставьте контакты, менеджер свяжется
+						с вами <span>в ближайшее время</span></div>
+					<form class="callback_form__form">
+						<div class="callback_form__inputs">
+							<div class="callback_form__input_wr">
+								<div class="callback_form__input_title">Имя *</div>
+								<input type="text" placeholder="Введите имя" class="callback_form__input">
+							</div>
+							<div class="callback_form__input_wr">
+								<div class="callback_form__input_title">Телефон *</div>
+								<input type="tel" placeholder="+7 (999) 000 99-00" class="callback_form__input js_input_tel">
+							</div>
+							<div class="callback_form__input_wr">
+								<div class="callback_form__input_title">E-mail *</div>
+								<input type="email" placeholder="info@corp.ru" class="callback_form__input">
+							</div>
+							<div class="callback_form__input_wr">
+								<div class="callback_form__input_title">Сообщение</div>
+								<input type="text" placeholder="Здравствуйте," class="callback_form__input">
+							</div>
+						</div>
+						<div class="callback_form__form_bottom">
+							<input type="submit" class="callback_form__submit btn this--wh" value="Отправить">
+							<div class="callback_form__agree">
+								<input type="checkbox" name="agree" id="agree_3">
+								<label for="agree_3">
+									Я даю согласие на обработку <a href="#">персональных данных</a>
+									в соответствии с <a href="#">политикой конфиденциальности</a>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="callback_popup__body js_callback_body_thanks">
+				<div class="callback_popup_thanks__img">
+					<img src="img/callback_form/popup_form_man.png" alt="">
+				</div>
+				<div class="callback_popup_thanks">
+					<div class="callback_popup__title">Спасибо<br>
+						за обращение</div>
+					<div class="callback_popup_thanks__text">Менеджер свяжется с Вами<br>
+						в ближайшее время</div>
+					<button class="callback_popup_thanks__btn btn this--wh js_callback_popup_close">Спасибо, жду!</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/sumoSelect.js"></script>
